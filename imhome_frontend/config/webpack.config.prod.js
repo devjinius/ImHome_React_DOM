@@ -202,7 +202,8 @@ module.exports = {
                     {
                       loader: require.resolve("sass-loader"),
                       options: {
-                        sourceMap: true
+                        sourceMap: true,
+                        data: `@import "C:/Users/Administrator/Desktop/git/ImHome_React_DOM/imhome_frontend/src/config/_variables.scss";`
                       }
                     }
                   ]
