@@ -10,15 +10,15 @@ const App = props => [
 
 const PrivateRoutes = props => (
   <Switch>
-    <Route path="/" render={() => "main"} />
-    <Route path="/explore" render={() => "explore"} />
+      <Route exact path="/" render={() => "main" }/>
+      <Route exact path="/explore" render={() => "explore"} />
   </Switch>
 )
 
 const PublicRoutes = props => (
   <Switch>
-    <Route path="/" render={() => "login"} />
-    <Route path="/register" render={() => "register"} />
+    <Route exact path="/" render={() => "login"} />
+    <Route exact path="/register" render={() => "register"} />
   </Switch>
 )
 
