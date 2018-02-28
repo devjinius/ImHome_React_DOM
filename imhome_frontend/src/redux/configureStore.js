@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import users from "redux/modules/users";
+import user from "redux/modules/users";
 import { routerReducer, routerMiddleware } from "react-router-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import createHistory from "history/createBrowserHistory";
@@ -18,7 +18,7 @@ if (env === "development") {
 
 //리듀서들을 합치는 공간
 const reducer = combineReducers({
-    users,
+    user,
     routing: routerReducer,
 })
 
