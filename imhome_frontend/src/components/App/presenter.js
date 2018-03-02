@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import {Route, Switch} from "react-router-dom";
 import styles from './styles.scss';
 import Center from 'components/Center';

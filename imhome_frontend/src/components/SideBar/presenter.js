@@ -6,7 +6,7 @@ const SideBar = () => {
     <div className={styles.sidebar}>
       
       <div className={styles.sidebar_dropdown}>
-        <a href="#">메뉴</a>
+        <a>메뉴</a>
       </div>
 
       <div className={styles.sidebar_inner}>
