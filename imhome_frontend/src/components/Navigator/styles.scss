@@ -1,0 +1,60 @@
+
+.navbar{
+	display: inline-flex;
+	position: fixed;
+	top: 0;
+	padding: 20px 0px;;
+	width: 100%;
+	font-size: $normal-font-size;
+	background-color: $bg-color;
+	border-bottom: 2px dashed #aaaaaa;
+	z-index: 1030;
+
+	@include breakpoint("phone") {
+		display: block;
+		text-align: center;
+		font-size: $small-font-size;
+	}
+
+	@include breakpoint("phone-landscape") {
+		font-size: $small-font-size;
+	}
+	
+	
+	.header{
+		flex: 1;
+		margin-left: 30px;
+		.navbar_brand{
+			font-size: $main-header-size;
+		}
+	}
+
+	.menu_list{
+		flex: 1;
+		margin-right: 30px;
+		
+		ul {
+			float: right;
+			list-style-type: none;
+			overflow: hidden;
+		}
+		
+		li {
+			display: flex;
+			float: left;
+		}
+		
+		li a {
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		
+		li a:hover {
+			color:  $light-pink;
+		}
+	}
+	
+	
+}
+
