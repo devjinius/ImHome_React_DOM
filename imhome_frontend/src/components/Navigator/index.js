@@ -10,7 +10,7 @@ const Navigator = (props) => {
 				</a>
 			</div>
 			<div className={styles.menu_list}>
-				<ul className={styles.nav, styles.navbar_nav, styles.navbar_right}>
+				<ul>
 					<li>
 						<a href="#">
 							주문재고관리

@@ -7,36 +7,85 @@
 	width: 100%;
 	font-size: $normal-font-size;
 	background-color: $bg-color;
-	border-bottom: 2px dashed #aaaaaa;
+	border-bottom: 2px dashed #aaa;
 	z-index: 1030;
 
 	@include breakpoint("phone") {
 		display: block;
-		text-align: center;
 		font-size: $small-font-size;
 	}
 
 	@include breakpoint("phone-landscape") {
 		font-size: $small-font-size;
+		padding: 10px 0px;;
 	}
-	
-	
+
+	@include breakpoint("small-table-portrait") {
+		font-size: 14px;
+	}
+
+	@include breakpoint("tablet-landscape") {
+		font-size: $small-font-size;
+	}
+
+	@include breakpoint("table-portrait") {
+		font-size: $small-font-size;
+	}
+
 	.header{
 		flex: 1;
 		margin-left: 30px;
+
+		@include breakpoint("phone-landscape") {
+			align-self: center;
+		}
+
 		.navbar_brand{
 			font-size: $main-header-size;
+
+			@include breakpoint("phone-landscape") {
+				font-size: $big-font-size;
+			}
+
+			@include breakpoint("small-table-portrait") {
+				font-size: $big-font-size;
+			}
 		}
 	}
 
 	.menu_list{
 		flex: 1;
 		margin-right: 30px;
+
+		@include breakpoint("phone") {
+			margin: 10px;
+		}
+
+		@include breakpoint("phone-landscape") {
+			flex: 3;
+			margin: 10px;
+		}
+
+		@include breakpoint("small-table-portrait") {
+			flex: 2;
+		}
+
+		@include breakpoint("tablet-landscape") {
+			flex: 2;
+		}
+
+		@include breakpoint("table-portrait") {
+			flex: 2;
+		}
 		
 		ul {
 			float: right;
 			list-style-type: none;
 			overflow: hidden;
+			
+			@include breakpoint("phone") {
+				display: table;
+			}
 		}
 		
 		li {
@@ -48,6 +97,18 @@
 			text-align: center;
 			padding: 16px;
 			text-decoration: none;
+
+			@include breakpoint("phone") {
+				padding: 10px 20px;
+			}
+
+			@include breakpoint("phone-landscape") {
+				padding: 8px;
+			}
+
+			@include breakpoint("small-table-portrait") {
+				padding: 8px;
+			}
 		}
 		
 		li a:hover {

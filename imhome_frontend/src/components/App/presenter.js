@@ -4,7 +4,7 @@ import {Route, Switch} from "react-router-dom";
 import styles from './styles.scss';
 import Center from 'components/Center';
 import Navigator from 'components/Navigator';
-import SideBar from 'components/SideBar'
+import SideBar from 'components/SideBar';
 
 const App = props => [
   props.isLoggedIn ? <Navigator key={1} {...props}/> : null,
