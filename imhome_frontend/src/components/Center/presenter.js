@@ -461,6 +461,30 @@ const Center = props => {
               </div>
               <div className={styles.productList}>
                 <ul>
+                  <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>sadf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>sadf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>sadf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>sadf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>sadf</li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
                   <li className={styles.productName}>sadf</li>
                   <li className={styles.productCost}>sadf</li>
                 </ul>
@@ -477,12 +501,12 @@ const Center = props => {
                 <div className={styles.orderProduct}>ORDER TOTAL</div>
                 <div className={styles.orderPrice}>0</div>
               </div>
-              <div className={styles.orderFooter}>
+              <div className={styles.orderbutton}>
                 <div>
-                  <button className={styles.orderBtn}>주문 저장</button>
+                  <button>주문 저장</button>
                 </div>
                 <div>
-                  <button className={styles.orderBtn}>주문 하기</button>
+                  <button>주문 하기</button>
                 </div>
               </div>
             </div>
@@ -490,7 +514,7 @@ const Center = props => {
         </div>
       </div>
       <div>
-        <button>전체 메뉴 보기</button>
+        <button className={styles.allProductBtn}>전체 메뉴 보기</button>
       </div>
 
       <div className={styles.popUp}>
