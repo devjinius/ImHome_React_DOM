@@ -2,7 +2,7 @@
 	display: inline-flex;
 	position: fixed;
 	top: 0;
-	padding: 20px 0px;;
+	padding: 10px 0px;
 	width: 100%;
 	font-size: $normal-font-size;
 	background-color: $bg-color;
@@ -20,11 +20,12 @@
 	}
 
 	@include breakpoint("small-table-portrait") {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	@include breakpoint("tablet-landscape") {
 		font-size: $small-font-size;
+		padding: 10px 0px;
 	}
 
 	@include breakpoint("table-portrait") {
@@ -85,36 +86,33 @@
 			@include breakpoint("phone") {
 				display: table;
 			}
-		}
-		
-		li {
-			display: flex;
-			float: left;
-		}
-		
-		li a {
-			text-align: center;
-			padding: 16px;
-			text-decoration: none;
 
-			@include breakpoint("phone") {
-				padding: 10px 20px;
-			}
-
-			@include breakpoint("phone-landscape") {
-				padding: 8px;
-			}
-
-			@include breakpoint("small-table-portrait") {
-				padding: 8px;
-			}
-		}
+			li {
+				display: flex;
+				float: left;
+				a {
+					text-align: center;
+					padding: 16px;
+					text-decoration: none;
 		
-		li a:hover {
-			color:  $light-pink;
+					@include breakpoint("phone") {
+						padding: 10px 20px;
+					}
+		
+					@include breakpoint("phone-landscape") {
+						padding: 8px;
+					}
+		
+					@include breakpoint("small-table-portrait") {
+						padding: 8px;
+					}
+
+					&a:hover {
+						color:  $light-pink;
+					}
+				}
+			}
 		}
 	}
-	
-	
 }
 

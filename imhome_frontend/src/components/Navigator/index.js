@@ -6,7 +6,7 @@ const Navigator = (props) => {
 		<div className={styles.navbar}>
 				<div className={styles.header}>
 					<a className={styles.navbar_brand}>I'm 
-						<span> Home</span>
+						Home
 					</a>
 				</div>
 				<div className={styles.menu_list}>
