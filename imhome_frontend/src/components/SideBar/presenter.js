@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.scss";
+import FaBeer from 'react-icons/fa/beer';
 
 const SideBar = () => {
   return (
@@ -8,13 +9,11 @@ const SideBar = () => {
       <div className={styles.sidebar_dropdown}>
         <a>메뉴</a>
       </div>
-
+      <h3> Lets go for a <FaBeer />? </h3>
       <div className={styles.sidebar_inner}>
         <ul className={styles.navi}>
           <li className={styles.leftBtn} id="imhome">
-            <span>
-              아임 홈
-            </span>
+            
           </li>
           <li className={styles.leftBtn} id="dongwonMain">
               동원 F&#38;B
