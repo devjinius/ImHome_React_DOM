@@ -18,10 +18,9 @@
 	}
 
 	@include breakpoint("tablet-landscape") {
-		padding: 10px;
-		svg{
-			width: 25px;
-		}
+		margin-top: 90px;
+		margin-left: 190px;
+		margin-right: 10px;
 	}
 
 	@include breakpoint("table-portrait") {
@@ -41,6 +40,10 @@
 		@include breakpoint("small-table-portrait") {
 			font-size: $small-font-size;
 			margin: 20px 20px;
+		}
+
+		@include breakpoint("tablet-landscape") {
+			font-size: $small-font-size;
 		}
 
 		.main_head{
@@ -68,7 +71,7 @@
 			display: inline;
 			overflow: auto;
 		}
-		
+
 		.left_container{
 			display: inline-block;
 			flex: 1;
@@ -87,12 +90,17 @@
 
 			@include breakpoint("small-table-portrait") {
 				display: block;
-				min-height: 100vmax;
-				max-height: 350px;
+				min-height: 90vmax;
+				max-height: 200px;
 				margin: 0px 10px;;
 				padding: 0px;
 			}
 
+			@include breakpoint("tablet-landscape") {
+				font-size: 12px;
+			}
+
+			
 			//스크롤바 설정
 			overflow-y: hidden;
 			scrollbar-highlight-color: $light-pink;
@@ -138,6 +146,7 @@
 					display: inline-flex;
 					cursor: pointer;
 					padding: 20px 10px;
+
 					.widget_head{
 						display: inline-block;
 						flex: 5;
@@ -146,6 +155,10 @@
 							display: block;
 							font-size: $normal-font-size;
 							padding: 5px;
+
+							@include breakpoint("tablet-landscape") {
+								font-size: $small-font-size;
+							}
 						}
 
 						.menuSubTitle{
@@ -164,6 +177,10 @@
 						align-items: center;
 						justify-content: center;
 						font-size: 30px;
+
+						@include breakpoint("tablet-landscape") {
+							font-size: $normal-font-size;
+						}
 					}
 				}
 			}
@@ -174,23 +191,45 @@
 				font-weight: 400;
 				flex-direction: row;
 				border-top: 1px solid rgba(170, 170, 170, 0.2);
+
+				@include breakpoint("tablet-landscape") {
+					font-size: 12px;
+				}
+
 				table{
 					width: 100%;
 				}
+
 				th{
 					padding: 10px;
+
+					@include breakpoint("tablet-landscape") {
+						padding: 7px;
+					}
 				}
 				tr{
 					border-bottom: 2px solid rgba(170, 170, 170, 0.2);
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+
 					td{
 						padding: 10px;
 						text-align: center;
 						border-bottom: 2px solid rgba(170, 170, 170, 0.2);
 
+						@include breakpoint("tablet-landscape") {
+							padding: 5px;
+						}
+
 						.upDownDiv{
 							border: 1px solid $dark-grey;
 							font-size: 18px;
 							font-weight: 700;
+
+							@include breakpoint("tablet-landscape") {
+								padding: 3px;
+							}
 					
 							.upDownBtn{
 								cursor: pointer;
@@ -214,8 +253,8 @@
 
 		.right_container{
 			display: inline-block;
-			background-color: $light-pink;
 			flex: 1;
+			background-color: $light-pink;
 			margin-left: 10px;
 			padding: 10px;
 			height: 65vmin;
@@ -230,6 +269,10 @@
 				display: block;
 				min-height: 80vmax;
 				margin: 10px 0px;
+			}
+
+			@include breakpoint("tablet-landscape") {
+				width: 50%;
 			}
 
 			.orderContainer{
@@ -252,6 +295,11 @@
 						text-align: center;
 						margin: 30px;
 					}
+
+					@include breakpoint("tablet-landscape") {
+						margin-left: 40px;
+						margin-top: 20px;
+					}
 				}
 
 				.order{
@@ -268,6 +316,12 @@
 
 					@include breakpoint("small-table-portrait") {
 						padding: 0px 10px;
+						font-size: $small-font-size
+					}
+
+					@include breakpoint("tablet-landscape") {
+						margin: 10px 20px;
+						padding: 5px 10px;
 						font-size: $small-font-size
 					}
 
@@ -298,10 +352,14 @@
 						display: block;
 						border-bottom: 1px dashed $bg-color;
 						font-size: $small-font-size;
-						height: 250px;
+						height: 200px;
 
 						@include breakpoint("small-table-portrait") {
-							min-height: 50vmax;
+							min-height: 40vmax;
+						}
+
+						@include breakpoint("tablet-landscape") {
+							min-height: 00px;
 						}
 
 						//스크롤바 설정
@@ -376,7 +434,7 @@
 							cursor: pointer;
 							color: $light-pink;
 							font-weight: 800;
-							padding: 8px 20px;
+							padding: 5px 20px;
 						}
 					}
 				}
