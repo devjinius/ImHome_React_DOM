@@ -9,7 +9,7 @@ class Container extends Component {
   };
 
   render() {
-    return <Center showTable={this._showTable} {...this.props} />;
+    return <Center showTable={this._showTable} showPopup={this._showPopup} {...this.props} />;
   }
 
   _showTable = e => {
@@ -17,8 +17,6 @@ class Container extends Component {
     let arrowAction = e.currentTarget.lastChild;
     let currentTargetStyle = e.currentTarget.style;
     let targetDisplay = e.currentTarget.nextElementSibling.style;
-
-    console.log(targetDisplay.display);
 
     if (targetDisplay.display === "none" || targetDisplay.display === "") {
       currentTargetStyle.backgroundColor = "#000";
@@ -30,6 +28,17 @@ class Container extends Component {
       currentTargetStyle.color = "#000";
       targetDisplay.display = "none";
       arrowAction.innerHTML = "▼";
+    }
+  };
+
+  _showPopup = e => {
+
+    let popUpStyle = document.getElementById("popUp").style;
+
+    if (popUpStyle.display === "none" || popUpStyle.display === "") {
+      popUpStyle.display="block";
+    } else {
+      popUpStyle.display="none";
     }
   };
 }

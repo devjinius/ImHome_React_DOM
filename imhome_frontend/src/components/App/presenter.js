@@ -8,7 +8,8 @@ import SideBar from 'components/SideBar';
 const App = props => [
   props.isLoggedIn ? <Navigator key={1} {...props}/> : null,
   props.isLoggedIn ? <SideBar key={2} /> : null,
-  props.isLoggedIn ? <PrivateRoutes key={3} /> : <PublicRoutes key={3}/>,
+  props.isLoggedIn ? <PrivateRoutes key={3} /> : <PrivateRoutes key={3} />,
+  // props.isLoggedIn ? <PrivateRoutes key={3} /> : <PublicRoutes key={3}/>,
 ]
 
 const PrivateRoutes = props => (

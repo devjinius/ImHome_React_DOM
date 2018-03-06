@@ -4,7 +4,7 @@
 	font-weight: 700;
 	position: fixed;
 	margin: 0px 20px;
-	z-index: 1030;
+	z-index: 10300;
 
 	@include breakpoint("phone") {
 		display: block;
@@ -42,9 +42,9 @@
 		text-decoration: none;
 		width: 100%;
 		display: none;
-		overflow: hidden;
 		padding: 10px 0px;
 		text-align: center;
+		border-top: 2px dashed #aaa;
 		border-bottom: 2px dashed #aaa;
 
 		cursor: pointer;
@@ -71,8 +71,12 @@
 			flex-direction: column;
 			list-style-type: none;
 
+			@include breakpoint("phone") {
+				width: 100%;
+				background-color: $bg-color;
+			}
+
 			@include breakpoint("phone-landscape") {
-				width: 140px;
 			}
 
 			@include breakpoint("small-table-portrait") {
@@ -86,44 +90,57 @@
 			@include breakpoint("table-portrait") {
 				width: 150px;
 			}
-		}
-		li{
-			flex: 1;
-			padding: 10px;
-			align-items: flex-start;
-			cursor: pointer;
-			border-bottom: 1px solid rgba(170, 170, 170, 0.2);
 
-			@include breakpoint("phone-landscape") {
-				padding:  5px;
-				svg{
-					width: 25px;
-				}
-			}
-
-			@include breakpoint("small-table-portrait") {
-				padding:  5px;
-				svg{
-					width: 25px;
-				}
-			}
-
-			@include breakpoint("tablet-landscape") {
+			li{
+				flex: 1;
 				padding: 10px;
-				svg{
-					width: 25px;
+				align-items: flex-start;
+				cursor: pointer;
+				border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+	
+				@include breakpoint("phone") {
+					padding: 5px 20px;
+					font-size: 14px;
+					svg{
+						width: 25px;
+					}
 				}
-			}
+	
+				@include breakpoint("phone-landscape") {
+					padding:  5px;
+					svg{
+						width: 25px;
+					}
+				}
+	
+				@include breakpoint("small-table-portrait") {
+					padding:  5px;
+					svg{
+						width: 25px;
+					}
+				}
+	
+				@include breakpoint("tablet-landscape") {
+					padding: 10px;
+					svg{
+						width: 25px;
+					}
+				}
+	
+				@include breakpoint("table-portrait") {
+					svg{
+						width: 25px;
+					}
+				}
 
-			@include breakpoint("table-portrait") {
-				svg{
-					width: 25px;
+				&:hover {
+					color: $bg-color;
+					background-color: $light-pink;
 				}
 			}
+			
+			
 		}
-		li:hover {
-			color: $bg-color;
-			background-color: $light-pink;
-		}
+		
 	}
 }

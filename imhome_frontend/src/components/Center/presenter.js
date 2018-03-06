@@ -31,7 +31,7 @@ const Center = props => {
                   <col width="15%" />
                   <col width="15%" />
                   <col width="20%" />
-                  <col width="15%" />
+                  <col width="20%" />
                 </colgroup>
                 <thead>
                   <tr>
@@ -56,8 +56,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -81,8 +81,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -106,8 +106,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -131,8 +131,58 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -166,7 +216,7 @@ const Center = props => {
                   <col width="15%" />
                   <col width="15%" />
                   <col width="20%" />
-                  <col width="15%" />
+                  <col width="20%" />
                 </colgroup>
                 <thead>
                   <tr>
@@ -191,8 +241,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -216,8 +266,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -241,8 +291,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -266,8 +316,58 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -301,7 +401,7 @@ const Center = props => {
                   <col width="15%" />
                   <col width="15%" />
                   <col width="20%" />
-                  <col width="15%" />
+                  <col width="20%" />
                 </colgroup>
                 <thead>
                   <tr>
@@ -326,8 +426,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -351,8 +451,8 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -376,8 +476,428 @@ const Center = props => {
                     <td id="${mainMenu.fCode}_Cost">
                       <span>asdf</span>
                     </td>
-                    <td className={styles.pMount}>
-                      <div class="upDownDiv">
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className={styles.menu}>
+            <div className={styles.menu_list} onClick={props.showTable}>
+              <div className={styles.widget_head}>
+                <span lang="ko" className={styles.menuTitle}>
+                  에스프레소
+                </span>
+                <span lang="ko" className={styles.menuSubTitle}>
+                  설명설명설명설명설명설명설설명설명설명설명설명설명설설명설명설명설명설명설명설
+                </span>
+              </div>
+              <div className={styles.menu_button}>▼</div>
+            </div>
+            <div className={styles.menu_table}>
+              <table>
+                <colgroup>
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>품목</th>
+                    <th>단위</th>
+                    <th>가격</th>
+                    <th>재고량</th>
+                    <th>주문</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className={styles.menu}>
+            <div className={styles.menu_list} onClick={props.showTable}>
+              <div className={styles.widget_head}>
+                <span lang="ko" className={styles.menuTitle}>
+                  에스프레소
+                </span>
+                <span lang="ko" className={styles.menuSubTitle}>
+                  설명설명설명설명설명설명설설명설명설명설명설명설명설설명설명설명설명설명설명설
+                </span>
+              </div>
+              <div className={styles.menu_button}>▼</div>
+            </div>
+            <div className={styles.menu_table}>
+              <table>
+                <colgroup>
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>품목</th>
+                    <th>단위</th>
+                    <th>가격</th>
+                    <th>재고량</th>
+                    <th>주문</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
+                        <span className={styles.upDownBtn}>-</span>
+                        <input
+                          className={styles.OrderNum}
+                          type="number"
+                          placeholder="0"
+                        />
+                        <span className={styles.upUpBtn}>+</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="List_${mainMenu.fCode}">
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Name">
+                      <span>asdf</span>
+                    </td>
+                    <td id="${mainMenu.fCode}_Cost">
+                      <span>asdf</span>
+                    </td>
+                    <td>
+                      <div className={styles.upDownDiv}>
                         <span className={styles.upDownBtn}>-</span>
                         <input
                           className={styles.OrderNum}
@@ -484,57 +1004,249 @@ const Center = props => {
         </div>
       </div>
       <div>
-        <button className={styles.allProductBtn}>전체 메뉴 보기</button>
+        <button className={styles.allProductBtn} onClick={props.showPopup}>
+          전체 메뉴 보기
+        </button>
       </div>
 
-      <div className={styles.popUp}>
-        <MdClose size={50} className={styles.popUp__close} />
+      <div id={"popUp"} className={styles.popUp}>
+        <MdClose
+          size={50}
+          className={styles.popUp__close}
+          onClick={props.showPopup}
+        />
         <span lang={"en"} className={styles.popUp__title}>
           Food Menu
         </span>
+        <table className={styles.popUp__titleTable}>
+          <colgroup>
+            <col width="*" />
+            <col width="15%" />
+            <col width="15%" />
+            <col width="20%" />
+            <col width="25%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>품목</th>
+              <th>단위</th>
+              <th>가격</th>
+              <th>재고량</th>
+              <th>주문</th>
+            </tr>
+          </thead>
+        </table>
         <div className={styles.popUp__content}>
-          <table className={styles.popUp__titleTable}>
-            <colgroup>
-              <col width="*" />
-              <col width="15%" />
-              <col width="15%" />
-              <col width="20%" />
-              <col width="20%" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th>품목</th>
-                <th>단위</th>
-                <th>가격</th>
-                <th>재고량</th>
-                <th>주문</th>
-              </tr>
-            </thead>
-          </table>
-
           <table className={styles.popUp__contentTable}>
             <colgroup>
               <col width="*" />
               <col width="15%" />
               <col width="15%" />
               <col width="20%" />
-              <col width="20%" />
+              <col width="25%" />
             </colgroup>
             <tbody>
               <tr className={styles.menuList}>
-                <td>asdfasdfsadfdsf</td>
-                <td>asdfasdfsadfdsf</td>
-                <td>asdfasdfsadfdsf</td>
-                <td>asdfasdfsadfdsf</td>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
                 <td>
                   <div className={styles.upDownDiv}>
-                  <span className={styles.upDownBtn}>-</span>
-                  <input
-                    className={styles.OrderNum}
-                    type="number"
-                    placeholder="0"
-                  />
-                  <span className={styles.upUpBtn}>+</span>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className={styles.menuList}>
+                <td>asd</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>asdf</td>
+                <td>
+                  <div className={styles.upDownDiv}>
+                    <span className={styles.upDownBtn}>-</span>
+                    <input
+                      className={styles.OrderNum}
+                      type="number"
+                      placeholder="0"
+                    />
+                    <span className={styles.upUpBtn}>+</span>
                   </div>
                 </td>
               </tr>

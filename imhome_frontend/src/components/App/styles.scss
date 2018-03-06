@@ -7,6 +7,45 @@ body{
 	font-family: 'Nanum Gothic', sans-serif;
 	font-weight: 700;
 	background-color: $bg-color;
+
+	//스크롤바 설정
+
+	overflow-y: hidden;
+	scrollbar-highlight-color: $light-pink;
+	scrollbar-3dlight-color: $light-pink;
+	scrollbar-face-color: $light-pink;
+	scrollbar-shadow-color: $light-pink;
+	scrollbar-darkshadow-color: $bg-color;
+	scrollbar-track-color: $bg-color;
+	scrollbar-arrow-color: $light-pink;
+	
+	overflow: scroll;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		margin-left: 20px;
+	}
+	
+	&::-webkit-scrollbar-button {
+		display: block;
+		height: 0px;
+	}
+	
+	&::-webkit-scrollbar-track {
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		height: 50px;
+		width: 50px;
+		background: $light-pink;
+	}
+	
+	&::-webkit-scrollbar-corner {
+		background: $bg-color;
+		width: 0px;
+	}
 }
 
 span:lang(ko){

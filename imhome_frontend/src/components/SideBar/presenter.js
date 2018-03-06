@@ -2,18 +2,13 @@ import React from "react";
 import styles from "./styles.scss";
 import MdReceipt from "react-icons/lib/md/receipt";
 
-const SideBar = () => {
-
-  function showDropdownMenu(e){
-    console.log(e)
-  }
-
+const SideBar = props => {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.sidebar_dropdown} onClick={showDropdownMenu}>
+      <div className={styles.sidebar_dropdown} onClick={props.showMenu}>
         <span lang={"ko"}>메뉴</span>
       </div>
-      <div className={styles.sidebar_inner}>
+      <div id={"sidebarMenu"} className={styles.sidebar_inner}>
         <ul className={styles.navi}>
           <li className={styles.leftBtn} id="imhome">
             <MdReceipt size={35}/> 아임홈
