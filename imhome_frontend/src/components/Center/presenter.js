@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "./styles.scss";
 import MdClose from "react-icons/lib/md/close";
+import SideBar from 'components/SideBar';
 
 const Center = props => {
   return (
-    <div className={styles.mainbar}>
+    <div className={styles.mainPage}>
+      <div className={styles.sideBar}>
+        <SideBar key={2} className={styles.sideBar}/>
+      </div>
+      <div className={styles.mainbar}>
       <div className={styles.main_head_container}>
         <span lang="en" className={styles.main_head}>
           Food Menu
@@ -941,13 +946,61 @@ const Center = props => {
 
         <div className={styles.right_container}>
           <div className={styles.orderContainer}>
-            <div className={styles.orderTitle}>Your Order</div>
+            <span lang={"en"} className={styles.orderTitle}>Your Order</span>
             <div className={styles.order}>
               <div className={styles.orderHead}>
                 <div className={styles.orderProduct}>product</div>
                 <div className={styles.orderPrice}>total</div>
               </div>
               <div className={styles.productList}>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
+                <ul>
+                  <li className={styles.productName}>
+                    saasdfasdfsadfsdfsdfasdfdf
+                  </li>
+                  <li className={styles.productCost}>sadf</li>
+                </ul>
                 <ul>
                   <li className={styles.productName}>
                     saasdfasdfsadfsdfsdfasdfdf
@@ -992,12 +1045,8 @@ const Center = props => {
                 <div className={styles.orderPrice}>0</div>
               </div>
               <div className={styles.orderbutton}>
-                <div>
-                  <button>주문 저장</button>
-                </div>
-                <div>
-                  <button>주문 하기</button>
-                </div>
+                  <button className={styles.orderbuttonDetail}>주문 저장</button>
+                  <button className={styles.orderbuttonDetail}>주문 하기</button>
               </div>
             </div>
           </div>
@@ -1254,6 +1303,7 @@ const Center = props => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

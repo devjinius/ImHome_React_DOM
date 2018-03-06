@@ -1,655 +1,662 @@
-/* Main */
-.mainbar {
-	position: relative;
-	margin-top: 90px;
-	margin-left: 260px;
-	margin-right: 30px;
-
-	@include breakpoint("phone") {
-		top: 100px;
-		margin-left: 10px;
-		margin-right: 10px;
+.mainPage{
+	display: flex;
+	flex: 15;
+	.sideBar{
+		flex: 2;
 	}
-
-	@include breakpoint("small-table-portrait") {
-		margin-top: 70px;
-		margin-left: 160px;
-		margin-right: 10px;
-	}
-
-	@include breakpoint("tablet-landscape") {
-		margin-top: 90px;
-		margin-left: 190px;
-		margin-right: 10px;
-	}
-
-	@include breakpoint("table-portrait") {
-		svg{
-			width: 25px;
-		}
-	}
-
-	.main_head_container{
-		display: block;
-		margin: 0px 20px;
+	.mainbar {
+		display: flex;
+		flex-direction: column;
+		flex: 7;
+		margin-right: 30px;
 
 		@include breakpoint("phone") {
-			margin: 20px 20px;
+			margin-top: 90px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 
 		@include breakpoint("small-table-portrait") {
-			font-size: $small-font-size;
-			margin: 20px 20px;
+			margin-top: 70px;
+			margin-left: 160px;
+			margin-right: 10px;
 		}
 
 		@include breakpoint("tablet-landscape") {
-			font-size: $small-font-size;
-		}
-
-		.main_head{
-			font-size: 40px;
-
-			@include breakpoint("small-table-portrait") {
-				font-size: 30px;
-			}
-		}
-	}
-
-	.container {
-		display: inline-flex;
-		width: 100%;
-		height: 70vmin;
-		flex-direction: row;
-		overflow: hidden;
-
-		@include breakpoint("phone") {
-			display: inline;
-			overflow: auto;
-		}
-
-		@include breakpoint("small-table-portrait") {
-			display: inline;
-			overflow: auto;
-		}
-
-		.left_container{
-			display: inline-block;
-			flex: 1;
-			padding: 10px;
-			min-height: 65vmin;
+			margin-top: 90px;
+			margin-left: 190px;
 			margin-right: 10px;
-			margin-top: 10px;
+		}
+
+		@include breakpoint("table-portrait") {
+			margin-top: 70px;
+		}
+
+		.main_head_container{
+			flex: 1;
+			margin: 0px 20px;
 
 			@include breakpoint("phone") {
-				display: block;
-				min-height: 100px;
-				max-height: 350px;
-				margin: 0px;
-				padding: 0px;
+				margin: 20px 20px;
 			}
 
 			@include breakpoint("small-table-portrait") {
-				display: block;
-				min-height: 90vmax;
-				max-height: 200px;
-				margin: 0px 10px;;
-				padding: 0px;
+				font-size: $small-font-size;
+				margin: 20px 20px;
 			}
 
 			@include breakpoint("tablet-landscape") {
-				font-size: 12px;
+				font-size: $small-font-size;
 			}
 
-			
-			//스크롤바 설정
-			overflow-y: hidden;
-			scrollbar-highlight-color: $light-pink;
-			scrollbar-3dlight-color: $light-pink;
-			scrollbar-face-color: $light-pink;
-			scrollbar-shadow-color: $light-pink;
-			scrollbar-darkshadow-color: $bg-color;
-			scrollbar-track-color:$bg-color;
-			scrollbar-arrow-color: $light-pink;
-			overflow: scroll;
-			&::-webkit-scrollbar {
-				width: 8px;
-				margin-left: 20px;
-			}
-			
-			&::-webkit-scrollbar-button {
-				display: block;
-				height: 0px;
-				background: $bg-color;
-			}
-			
-			&::-webkit-scrollbar-track {
-				-webkit-border-radius: 5px;
-				border-radius: 5px;
-			}
-			
-			&::-webkit-scrollbar-thumb {
-				height: 50px;
-				width: 50px;
-				background: $light-pink;
-				-webkit-border-radius: 5px;
-				border-radius: 5px;
-			}
-			
-			&::-webkit-scrollbar-corner {
-				background: $bg-color;
-			}
-			
-			.menu{
-				border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+			.main_head{
+				font-size: 40px;
 
-				.menu_list{
-					display: inline-flex;
-					cursor: pointer;
-					padding: 20px 10px;
-
-					.widget_head{
-						display: inline-block;
-						flex: 5;
-
-						.menuTitle{
-							display: block;
-							font-size: $normal-font-size;
-							padding: 5px;
-
-							@include breakpoint("tablet-landscape") {
-								font-size: $small-font-size;
-							}
-						}
-
-						.menuSubTitle{
-							display: block;
-							padding: 5px;
-							overflow: hidden;
-							text-overflow: ellipsis;
-							//white-space: nowrap;
-						}
-					}
-					
-
-					.menu_button{
-						display: inline-flex;
-						flex: 1;
-						align-items: center;
-						justify-content: center;
-						font-size: 30px;
-
-						@include breakpoint("tablet-landscape") {
-							font-size: $normal-font-size;
-						}
-					}
+				@include breakpoint("small-table-portrait") {
+					font-size: 30px;
 				}
 			}
-			.menu_table{
-				display: none;
-				font-size: $small-font-size;
-				color: $dark-grey;
-				font-weight: 400;
-				flex-direction: row;
-				border-top: 1px solid rgba(170, 170, 170, 0.2);
+		}
+
+		.container {
+			display: flex;
+			flex: 10;
+			justify-items: initial;
+			flex-direction: row;
+			max-height: 75vmin;
+			overflow: hidden;
+
+			@include breakpoint("phone") {
+				display: inline;
+				overflow: auto;
+			}
+
+			@include breakpoint("small-table-portrait") {
+				display: inline;
+				overflow: auto;
+			}
+
+			.left_container{
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+
+				@include breakpoint("phone") {
+					display: flex;
+					min-height: 100px;
+					max-height: 350px;
+					margin: 0px;
+					padding: 0px;
+				}
+
+				@include breakpoint("small-table-portrait") {
+					display: flex;
+					min-height: 90vmax;
+					max-height: 200px;
+					margin: 0px 10px;;
+					padding: 0px;
+				}
 
 				@include breakpoint("tablet-landscape") {
 					font-size: 12px;
 				}
 
-				table{
-					width: 100%;
+				
+				//스크롤바 설정
+				overflow-y: hidden;
+				scrollbar-highlight-color: $light-pink;
+				scrollbar-3dlight-color: $light-pink;
+				scrollbar-face-color: $light-pink;
+				scrollbar-shadow-color: $light-pink;
+				scrollbar-darkshadow-color: $bg-color;
+				scrollbar-track-color:$bg-color;
+				scrollbar-arrow-color: $light-pink;
+				overflow: scroll;
+				
+				&::-webkit-scrollbar {
+					width: 8px;
+					margin-left: 20px;
 				}
-
-				th{
-					padding: 10px;
-
-					@include breakpoint("tablet-landscape") {
-						padding: 7px;
-					}
+				
+				&::-webkit-scrollbar-button {
+					display: block;
+					height: 0px;
+					background: $bg-color;
 				}
-				tr{
-					border-bottom: 2px solid rgba(170, 170, 170, 0.2);
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
+				
+				&::-webkit-scrollbar-track {
+					-webkit-border-radius: 5px;
+					border-radius: 5px;
+				}
+				
+				&::-webkit-scrollbar-thumb {
+					height: 50px;
+					width: 50px;
+					background: $light-pink;
+					-webkit-border-radius: 5px;
+					border-radius: 5px;
+				}
+				
+				&::-webkit-scrollbar-corner {
+					background: $bg-color;
+				}
+				
+				.menu{
+					border-bottom: 1px solid rgba(170, 170, 170, 0.2);
 
-					td{
-						padding: 10px;
-						text-align: center;
-						border-bottom: 2px solid rgba(170, 170, 170, 0.2);
+					.menu_list{
+						display: flex;
+						cursor: pointer;
+						flex-direction: row;
+						padding: 20px 10px;
 
-						@include breakpoint("tablet-landscape") {
-							padding: 5px;
+						.widget_head{
+							display: flex;
+							flex: 5;
+							flex-direction: column;
+
+							.menuTitle{
+								font-size: $normal-font-size;
+								padding: 5px;
+
+								@include breakpoint("tablet-landscape") {
+									font-size: $small-font-size;
+								}
+							}
+
+							.menuSubTitle{
+								padding: 5px;
+								overflow: hidden;
+								//text-overflow: ellipsis;
+								//white-space: nowrap;
+							}
 						}
+						
 
-						.upDownDiv{
-							border: 1px solid $dark-grey;
-							font-size: 18px;
-							font-weight: 700;
+						.menu_button{
+							display: flex;
+							flex: 1;
+							align-items: center;
+							justify-content: center;
+							font-size: 40px;
 
 							@include breakpoint("tablet-landscape") {
-								padding: 3px;
-							}
-					
-							.upDownBtn{
-								cursor: pointer;
-								width: 17px;
-							}
-					
-							.OrderNum{
-								border: 0px;
-							}
-					
-							.upUpBtn{
-								cursor: pointer;
-								width: 10px;
-					
+								font-size: $normal-font-size;
 							}
 						}
 					}
 				}
-			}
-		}
-
-		.right_container{
-			display: inline-block;
-			flex: 1;
-			background-color: $light-pink;
-			margin-left: 10px;
-			padding: 10px;
-			height: 65vmin;
-
-			@include breakpoint("phone") {
-				display: block;
-				margin: 10px 0px;
-				height: 70vmax;
-			}
-
-			@include breakpoint("small-table-portrait") {
-				display: block;
-				min-height: 80vmax;
-				margin: 10px 0px;
-			}
-
-			@include breakpoint("tablet-landscape") {
-				width: 50%;
-			}
-
-			.orderContainer{
-				border: 1px dashed$bg-color;
-				height: 100%;
-				color: $bg-color;
-
-				.orderTitle{
-					display: block;
-					font-size: $big-font-size;
-					margin-left: 80px;
-					margin-top: 40px;
-
-					@include breakpoint("phone") {
-						text-align: center;
-						margin: 10px;
-					}
-
-					@include breakpoint("small-table-portrait") {
-						text-align: center;
-						margin: 30px;
-					}
+				.menu_table{
+					display: none;
+					font-size: $small-font-size;
+					color: $dark-grey;
+					font-weight: 400;
+					flex-direction: row;
+					border-top: 1px solid rgba(170, 170, 170, 0.2);
 
 					@include breakpoint("tablet-landscape") {
-						margin-left: 40px;
-						margin-top: 20px;
+						font-size: 12px;
 					}
+
+					table{
+						width: 100%;
+
+						th{
+							padding: 10px;
+		
+							@include breakpoint("tablet-landscape") {
+								padding: 7px;
+							}
+						}
+						tr{
+							border-bottom: 2px solid rgba(170, 170, 170, 0.2);
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+		
+							td{
+								padding: 10px;
+								text-align: center;
+								border-bottom: 2px solid rgba(170, 170, 170, 0.2);
+		
+								@include breakpoint("tablet-landscape") {
+									padding: 5px;
+								}
+		
+								.upDownDiv{
+									border: 1px solid $dark-grey;
+									font-size: 18px;
+									font-weight: 700;
+		
+									@include breakpoint("tablet-landscape") {
+										padding: 3px;
+									}
+							
+									.upDownBtn{
+										cursor: pointer;
+										width: 17px;
+									}
+							
+									.OrderNum{
+										border: 0px;
+									}
+							
+									.upUpBtn{
+										cursor: pointer;
+										width: 10px;
+							
+									}
+								}
+							}
+						}
+					}
+
+					
+				}
+			}
+
+			.right_container{
+				display: flex;
+				flex: 1;
+				background-color: $light-pink;
+				margin-left: 20px;
+				padding: 10px;
+
+				@include breakpoint("phone") {
+					display: block;
+					margin: 10px 0px;
+					height: 70vmax;
 				}
 
-				.order{
+				@include breakpoint("small-table-portrait") {
 					display: block;
-					padding: 10px 30px;
-					margin: 0px 40px;
-					font-size: $normal-font-size;
+					min-height: 80vmax;
+					margin: 10px 0px;
+				}
 
-					@include breakpoint("phone") {
-						padding: 5px;
-						margin: 0px;
-						font-size: $small-font-size
-					}
+				@include breakpoint("tablet-landscape") {
+					width: 50%;
+				}
 
-					@include breakpoint("small-table-portrait") {
-						padding: 0px 10px;
-						font-size: $small-font-size
-					}
+				.orderContainer{
+					display: flex;
+					flex: 1;
+					flex-direction: column;
+					border: 1px dashed $bg-color;
+					color: $bg-color;
 
-					@include breakpoint("tablet-landscape") {
-						margin: 10px 20px;
-						padding: 5px 10px;
-						font-size: $small-font-size
-					}
-
-					.orderHead{
-						display: inline-flex;
-						width: 100%;
-						border-bottom: 1px dashed $bg-color;
-					}
-
-					.orderTotal{
-						display: inline-flex;
-						width: 100%;
-					}
-
-					.orderProduct{
-						flex: 2;
-						padding: 10px 20px;
-						text-transform: uppercase;
-					}
-
-					.orderPrice{
+					.orderTitle{
 						flex: 1;
-						padding: 10px;
-						text-transform: uppercase;
-					}
-					
-					.productList {
-						display: block;
-						border-bottom: 1px dashed $bg-color;
-						font-size: $small-font-size;
-						height: 200px;
+						font-size: $big-font-size;
+
+						@include breakpoint("phone") {
+							text-align: center;
+							margin: 10px;
+						}
 
 						@include breakpoint("small-table-portrait") {
-							min-height: 40vmax;
+							text-align: center;
+							margin: 30px;
 						}
 
 						@include breakpoint("tablet-landscape") {
-							min-height: 00px;
-						}
-
-						//스크롤바 설정
-						overflow-y: hidden;
-						scrollbar-highlight-color: $bg-color;
-						scrollbar-3dlight-color: $bg-color;
-						scrollbar-face-color: $bg-color;
-						scrollbar-shadow-color: $bg-color;
-						scrollbar-darkshadow-color: $light-pink;
-						scrollbar-track-color: $light-pink;
-						scrollbar-arrow-color: $bg-color;
-						
-						overflow: scroll;
-
-						&::-webkit-scrollbar {
-							width: 8px;
-							margin-left: 20px;
-						}
-						
-						&::-webkit-scrollbar-button {
-							display: block;
-							height: 0px;
-						}
-						
-						&::-webkit-scrollbar-track {
-							-webkit-border-radius: 5px;
-							border-radius: 5px;
-						}
-						
-						&::-webkit-scrollbar-thumb {
-							height: 50px;
-							width: 50px;
-							background: #fff;
-						}
-						
-						&::-webkit-scrollbar-corner {
-							background: $light-pink;
-						}
-
-						ul {
-							display: inline-flex;
-							width: 100%;
-	
-							li {
-								&.productName{
-									flex: 2.2;
-									padding: 10px 20px;
-									overflow: hidden;
-									text-overflow: ellipsis;
-									white-space: nowrap;
-								}
-								&.productCost{
-									flex: 1;
-									padding: 10px;
-								}
-							}
+							font-size: $normal-font-size;
+							margin-left: 40px;
+							margin-top: 20px;
 						}
 					}
 
-					.orderbutton{
-						display: inline-flex;
-						width: 100%;
-						justify-content: space-between;
+					.order{
+						flex: 10;
 						font-size: $normal-font-size;
 
-						button{
-							margin: 0px 20px;
+						@include breakpoint("phone") {
+							padding: 5px;
+							margin: 0px;
+							font-size: $small-font-size
+						}
+
+						@include breakpoint("small-table-portrait") {
+							padding: 0px 10px;
+							font-size: $small-font-size
+						}
+
+						@include breakpoint("tablet-landscape") {
+							margin: 10px 20px;
+							padding: 5px 10px;
+							font-size: $small-font-size;
+						}
+
+						.orderHead{
+							display: flex;
+							border-bottom: 1px dashed $bg-color;
+							
+							.orderProduct{
+								flex: 2;
+								text-transform: uppercase;
+							}
+		
+							.orderPrice{
+								flex: 1;
+								text-transform: uppercase;
+							}
+						}
+
+						.productList {
+							display: flex;
+							flex-direction: column;
+							border-bottom: 1px dashed $bg-color;
+							font-size: $small-font-size;
+
+							@include breakpoint("small-table-portrait") {
+								min-height: 40vmax;
+							}
+
+							@include breakpoint("tablet-landscape") {
+								min-height: 200px;
+							}
+
+							//스크롤바 설정
+							overflow-y: hidden;
+							scrollbar-highlight-color: $bg-color;
+							scrollbar-3dlight-color: $bg-color;
+							scrollbar-face-color: $bg-color;
+							scrollbar-shadow-color: $bg-color;
+							scrollbar-darkshadow-color: $light-pink;
+							scrollbar-track-color: $light-pink;
+							scrollbar-arrow-color: $bg-color;
+							
+							overflow: scroll;
+
+							&::-webkit-scrollbar {
+								width: 8px;
+								margin-left: 20px;
+							}
+							
+							&::-webkit-scrollbar-button {
+								display: block;
+								height: 0px;
+							}
+							
+							&::-webkit-scrollbar-track {
+								-webkit-border-radius: 5px;
+								border-radius: 5px;
+							}
+							
+							&::-webkit-scrollbar-thumb {
+								height: 50px;
+								width: 50px;
+								background: #fff;
+							}
+							
+							&::-webkit-scrollbar-corner {
+								background: $light-pink;
+							}
+
+							ul {
+								display: flex;
+								width: 100%;
+		
+								li {
+									&.productName{
+										flex: 2;
+										overflow: hidden;
+										text-overflow: ellipsis;
+										white-space: nowrap;
+									}
+									&.productCost{
+										flex: 1;
+									}
+								}
+							}
+						}
+
+						.orderTotal{
+							display: flex;
+							font-size: $small-font-size;
+
+							.orderProduct{
+								flex: 2;
+								text-transform: uppercase;
+							}
+		
+							.orderPrice{
+								flex: 1;
+								text-transform: uppercase;
+							}
+						}
+
+						.orderbutton{
+							display: flex;
 							flex: 1;
-							background-color: $bg-color;
-							border: none;
-							border-radius: 5px;
-							cursor: pointer;
-							color: $light-pink;
-							font-weight: 800;
-							padding: 5px 20px;
+							justify-content: space-around;
+
+							.orderbuttonDetail{
+								flex: 1;
+								background-color: $bg-color;
+								font-size: 20px;
+								border: 1px solid $light-pink;
+								border-radius: 5px;
+								cursor: pointer;
+								color: $light-pink;
+								font-weight: 800;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
 
-	.allProductBtn {
-		background-color: #ffa101;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		color: $bg-color;
-		display: block;
-		font-weight: 700;
-		font-size: $normal-font-size;
-		padding: 10px 20px;
-		margin-left: 15px;
-
-		@include breakpoint("phone") {
-			display: none;
-			width: 100%;
-			padding: 5px;
-			margin: 0px 0px 40px 0px;
-			font-size: $small-font-size
-		}
-
-		@include breakpoint("small-table-portrait") {
-			width: 100%;
-			padding: 5px;
-			margin: 0px 0px 40px 0px;
-			font-size: $small-font-size
-		}
-
-	}
-
-	.popUp{
-		display: none;
-		position: fixed;
-		background-color: $bg-color;
-		border-radius: 5px;
-		top: 18%;
-		left: 18%;
-		width: 60%;
-		height: 55%;
-		border: 1px solid #ccc;
-		overflow: hidden;
-		padding: 20px;
-		z-index: 1010000;
-
-		@include breakpoint("phone") {
-			width: 94vmin;
-			padding: 0px;
-			left: 0%;
-			margin: 0px 10px;
-		}
-
-		@include breakpoint("small-table-portrait") {
-			width: 100vmin;
-			padding: 0px;
-			left: 0%;
-		}
-
-		@include breakpoint("table-portrait") {
-			width: 98vmin;
-			padding: 0px;
-			left: 1%;
-		}
-
-		.popUp__close{
-			float: right;
+		.allProductBtn {
+			flex: 1;
+			background-color: #ffa101;
+			border: none;
+			border-radius: 5px;
 			cursor: pointer;
-
-			@include breakpoint("phone") {
-				width: 30px;
-				padding: 10px;
-				left: 0%;
-			}
-		}
-
-		.popUp__title{
+			color: $bg-color;
 			display: block;
-			font-size: $big-font-size;
+			font-weight: 700;
+			font-size: $normal-font-size;
 			padding: 10px 20px;
-			margin: 10px 0px;
-		}
-
-
-		.popUp__titleTable{
-			width: 100%;
+			margin-left: 15px;
 
 			@include breakpoint("phone") {
-				font-size: 12px;
+				display: none;
+				width: 100%;
+				padding: 5px;
+				margin: 0px 0px 40px 0px;
+				font-size: $small-font-size
 			}
-			
-			th{
-				padding: 10px;
-				border-top: 2px dashed $dark-grey;
-				border-bottom: 2px dashed $dark-grey;
-				font-weight: 700;
-			}
-		}
-
-		.popUp__content{
-			width: 100%;
-			font-size: $small-font-size;
-			font-weight: 400;
-			overflow: auto;
-			max-height: 300px;
 
 			@include breakpoint("small-table-portrait") {
-				max-height: 350px;
+				width: 100%;
+				padding: 5px;
+				margin: 0px 0px 40px 0px;
+				font-size: $small-font-size
 			}
+
+		}
+
+		.popUp{
+			display: none;
+			position: fixed;
+			background-color: $bg-color;
+			border-radius: 5px;
+			top: 18%;
+			left: 18%;
+			width: 60%;
+			height: 55%;
+			border: 1px solid #ccc;
+			overflow: hidden;
+			padding: 20px;
+			z-index: 1010000;
+
+			@include breakpoint("phone") {
+				width: 94vmin;
+				padding: 0px;
+				left: 0%;
+				margin: 0px 10px;
+			}
+
+			@include breakpoint("small-table-portrait") {
+				width: 100vmin;
+				padding: 0px;
+				left: 0%;
+			}
+
 			@include breakpoint("table-portrait") {
-				max-height: 400px;
+				width: 98vmin;
+				padding: 0px;
+				left: 1%;
 			}
 
-			overflow-y: hidden;
-			scrollbar-highlight-color: $light-pink;
-			scrollbar-3dlight-color: $light-pink;
-			scrollbar-face-color: $light-pink;
-			scrollbar-shadow-color: $light-pink;
-			scrollbar-darkshadow-color: $bg-color;
-			scrollbar-track-color: $bg-color;
-			scrollbar-arrow-color: $light-pink;
-			overflow: auto;
+			.popUp__close{
+				float: right;
+				cursor: pointer;
 
-			&::-webkit-scrollbar {
-				width: 8px;
-				height: 5px;
-				margin-left: 20px;
+				@include breakpoint("phone") {
+					width: 30px;
+					padding: 10px;
+					left: 0%;
+				}
 			}
-			
-			&::-webkit-scrollbar-button {
+
+			.popUp__title{
 				display: block;
-				height: 0px;
-			}
-			
-			&::-webkit-scrollbar-track {
-				-webkit-border-radius: 5px;
-				border-radius: 5px;
-			}
-			
-			&::-webkit-scrollbar-thumb {
-				height: 20px;
-				width: 20px;
-				background: $light-pink;
-				border-radius: 5px;
-			}
-			
-			&::-webkit-scrollbar-corner {
-				background: $bg-color;
+				font-size: $big-font-size;
+				padding: 10px 20px;
+				margin: 10px 0px;
 			}
 
-			
 
-			.popUp__contentTable{
+			.popUp__titleTable{
 				width: 100%;
 
 				@include breakpoint("phone") {
 					font-size: 12px;
 				}
+				
+				th{
+					padding: 10px;
+					border-top: 2px dashed $dark-grey;
+					border-bottom: 2px dashed $dark-grey;
+					font-weight: 700;
+				}
+			}
+
+			.popUp__content{
+				width: 100%;
+				font-size: $small-font-size;
+				font-weight: 400;
+				overflow: auto;
+				max-height: 300px;
+
+				@include breakpoint("small-table-portrait") {
+					max-height: 350px;
+				}
+				@include breakpoint("table-portrait") {
+					max-height: 400px;
+				}
+
+				overflow-y: hidden;
+				scrollbar-highlight-color: $light-pink;
+				scrollbar-3dlight-color: $light-pink;
+				scrollbar-face-color: $light-pink;
+				scrollbar-shadow-color: $light-pink;
+				scrollbar-darkshadow-color: $bg-color;
+				scrollbar-track-color: $bg-color;
+				scrollbar-arrow-color: $light-pink;
+				overflow: auto;
+
+				&::-webkit-scrollbar {
+					width: 8px;
+					height: 5px;
+					margin-left: 20px;
+				}
+				
+				&::-webkit-scrollbar-button {
+					display: block;
+					height: 0px;
+				}
+				
+				&::-webkit-scrollbar-track {
+					-webkit-border-radius: 5px;
+					border-radius: 5px;
+				}
+				
+				&::-webkit-scrollbar-thumb {
+					height: 20px;
+					width: 20px;
+					background: $light-pink;
+					border-radius: 5px;
+				}
+				
+				&::-webkit-scrollbar-corner {
+					background: $bg-color;
+				}
 
 				
 
-				.menuList{
+				.popUp__contentTable{
 					width: 100%;
-					td{
-						padding: 8px;
-						text-align: center;
-						border-bottom: 2px solid rgba(170, 170, 170, 0.2);
-						overflow: hidden;
-						text-overflow: ellipsis;
-						white-space: nowrap;
 
-						@include breakpoint("phone") {
-							width: 20px;
-						}
+					@include breakpoint("phone") {
+						font-size: 12px;
 					}
 
-					.upDownDiv{
-						border: 1px solid $dark-grey;
-						margin: 0px 40px;
-						padding: 0px;
-						font-size: 18px;
-						font-weight: 700;
+					
 
-						.upDownBtn{
-							cursor: pointer;
-							width: 10px;
+					.menuList{
+						width: 100%;
+						td{
+							padding: 8px;
+							text-align: center;
+							border-bottom: 2px solid rgba(170, 170, 170, 0.2);
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+
+							@include breakpoint("phone") {
+								width: 20px;
+							}
 						}
 
-						.OrderNum{
-							border: 0px;
-						}
+						.upDownDiv{
+							border: 1px solid $dark-grey;
+							margin: 0px 40px;
+							padding: 0px;
+							font-size: 18px;
+							font-weight: 700;
 
-						.upUpBtn{
-							cursor: pointer;
-							width: 10px;
+							.upDownBtn{
+								cursor: pointer;
+								width: 10px;
+							}
 
+							.OrderNum{
+								border: 0px;
+							}
+
+							.upUpBtn{
+								cursor: pointer;
+								width: 10px;
+
+							}
 						}
 					}
 				}
 			}
 		}
-	}
 
-	input[type="number"]{
-		width: 40px;
-		text-align: center;
-	}
-	input[type="number"]::-webkit-outer-spin-button,
-	input[type="number"]::-webkit-inner-spin-button {
-		border: none;
-		-webkit-appearance: none;
-		margin: 0;
+		input[type="number"]{
+			width: 40px;
+			text-align: center;
+		}
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			border: none;
+			-webkit-appearance: none;
+			margin: 0;
+		}
 	}
 }

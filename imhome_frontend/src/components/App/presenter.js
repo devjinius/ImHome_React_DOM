@@ -6,15 +6,14 @@ import Navigator from 'components/Navigator';
 import SideBar from 'components/SideBar';
 
 const App = props => [
-  props.isLoggedIn ? <Navigator key={1} {...props}/> : null,
-  props.isLoggedIn ? <SideBar key={2} /> : null,
-  props.isLoggedIn ? <PrivateRoutes key={3} /> : <PrivateRoutes key={3} />,
+  props.isLoggedIn ? <div className={styles.mainBody}><Navigator key={1} {...props} styles={styles}/><PrivateRoutes key={3} /></div> : <PrivateRoutes key={3} />,
+  //props.isLoggedIn ? <PrivateRoutes key={3} /> : <PrivateRoutes key={3} />,
   // props.isLoggedIn ? <PrivateRoutes key={3} /> : <PublicRoutes key={3}/>,
 ]
 
 const PrivateRoutes = props => (
   <Switch>
-      <Route exact path="/" component = {Center} />
+      <Route exact path="/" component = {Center} styles={styles}/>
       <Route exact path="/explore" render={() => "explore"} />
   </Switch>
 )
