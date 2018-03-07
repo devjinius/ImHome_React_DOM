@@ -1,14 +1,17 @@
 .mainPage{
 	display: flex;
-	flex: 15;
+	flex: 16;
+	padding: 15px 20px;
+
 	.sideBar{
-		flex: 2;
+		flex: 1;
 	}
+
 	.mainbar {
 		display: flex;
 		flex-direction: column;
-		flex: 7;
-		margin-right: 30px;
+		flex: 5;
+		padding: 0px 30px;
 
 		@include breakpoint("phone") {
 			margin-top: 90px;
@@ -33,8 +36,10 @@
 		}
 
 		.main_head_container{
+			display: flex;
 			flex: 1;
-			margin: 0px 20px;
+			padding: 0px 20px;
+			align-items: center;
 
 			@include breakpoint("phone") {
 				margin: 20px 20px;
@@ -50,7 +55,7 @@
 			}
 
 			.main_head{
-				font-size: 40px;
+				font-size: $main-header-size;
 
 				@include breakpoint("small-table-portrait") {
 					font-size: 30px;
@@ -60,11 +65,8 @@
 
 		.container {
 			display: flex;
-			flex: 10;
-			justify-items: initial;
+			flex: 13;
 			flex-direction: row;
-			max-height: 75vmin;
-			overflow: hidden;
 
 			@include breakpoint("phone") {
 				display: inline;
@@ -79,6 +81,8 @@
 			.left_container{
 				display: flex;
 				flex-direction: column;
+				margin: 0px 5px;
+				padding-right: 20px; 
 				flex: 1;
 
 				@include breakpoint("phone") {
@@ -165,9 +169,11 @@
 							}
 
 							.menuSubTitle{
+								font-size: $small-font-size;
+								font-weight: 400;
 								padding: 5px;
 								overflow: hidden;
-								//text-overflow: ellipsis;
+								text-overflow: ellipsis;
 								//white-space: nowrap;
 							}
 						}
@@ -189,7 +195,6 @@
 				.menu_table{
 					display: none;
 					font-size: $small-font-size;
-					color: $dark-grey;
 					font-weight: 400;
 					flex-direction: row;
 					border-top: 1px solid rgba(170, 170, 170, 0.2);
@@ -215,7 +220,7 @@
 							white-space: nowrap;
 		
 							td{
-								padding: 10px;
+								padding: 5px;
 								text-align: center;
 								border-bottom: 2px solid rgba(170, 170, 170, 0.2);
 		
@@ -224,8 +229,8 @@
 								}
 		
 								.upDownDiv{
-									border: 1px solid $dark-grey;
-									font-size: 18px;
+									border: 1px solid rgba(170, 170, 170, 0.5);
+									font-size: 20px;
 									font-weight: 700;
 		
 									@include breakpoint("tablet-landscape") {
@@ -234,7 +239,7 @@
 							
 									.upDownBtn{
 										cursor: pointer;
-										width: 17px;
+										padding: 15px;
 									}
 							
 									.OrderNum{
@@ -243,8 +248,7 @@
 							
 									.upUpBtn{
 										cursor: pointer;
-										width: 10px;
-							
+										padding: 15px;
 									}
 								}
 							}
@@ -259,7 +263,7 @@
 				display: flex;
 				flex: 1;
 				background-color: $light-pink;
-				margin-left: 20px;
+				margin: 0px 5px;
 				padding: 10px;
 
 				@include breakpoint("phone") {
@@ -283,11 +287,15 @@
 					flex: 1;
 					flex-direction: column;
 					border: 1px dashed $bg-color;
+					padding: 40px 70px;
 					color: $bg-color;
+					justify-content: space-around; 
 
 					.orderTitle{
+						display: flex;
 						flex: 1;
 						font-size: $big-font-size;
+						padding: 0px 20px;
 
 						@include breakpoint("phone") {
 							text-align: center;
@@ -307,8 +315,11 @@
 					}
 
 					.order{
-						flex: 10;
+						display: flex;
+						flex-direction: column;
+						flex: 18;
 						font-size: $normal-font-size;
+						font-weight: 800;
 
 						@include breakpoint("phone") {
 							padding: 5px;
@@ -329,7 +340,9 @@
 
 						.orderHead{
 							display: flex;
+							flex: 1;
 							border-bottom: 1px dashed $bg-color;
+							padding: 10px 20px;
 							
 							.orderProduct{
 								flex: 2;
@@ -344,9 +357,11 @@
 
 						.productList {
 							display: flex;
+							flex: 10;
 							flex-direction: column;
 							border-bottom: 1px dashed $bg-color;
 							font-size: $small-font-size;
+							padding: 20px;
 
 							@include breakpoint("small-table-portrait") {
 								min-height: 40vmax;
@@ -413,7 +428,10 @@
 
 						.orderTotal{
 							display: flex;
-							font-size: $small-font-size;
+							flex: 2;
+							font-size: $normal-font-size;
+							align-items: center;
+							padding: 0px 20px;
 
 							.orderProduct{
 								flex: 2;
@@ -428,14 +446,16 @@
 
 						.orderbutton{
 							display: flex;
-							flex: 1;
+							flex: 1.5;
 							justify-content: space-around;
+							
 
 							.orderbuttonDetail{
 								flex: 1;
 								background-color: $bg-color;
-								font-size: 20px;
-								border: 1px solid $light-pink;
+								font-size: $big-font-size;
+								margin: 0px 20px;
+								border: 0;
 								border-radius: 5px;
 								cursor: pointer;
 								color: $light-pink;
@@ -448,7 +468,7 @@
 		}
 
 		.allProductBtn {
-			flex: 1;
+			flex: 2;
 			background-color: #ffa101;
 			border: none;
 			border-radius: 5px;

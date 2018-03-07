@@ -1,9 +1,7 @@
 .sidebar{
 	display: flex;
-	flex: 1;
 	font-size: $normal-font-size;
 	font-weight: 700;
-	justify-content: space-around;
 
 	@include breakpoint("phone") {
 		display: block;
@@ -64,14 +62,11 @@
 		@include breakpoint("phone") {
 			display: none;
 		}
-
+		
 		ul{
 			display: flex;
-			padding: 0px 25px;
+			padding: 0 10px;
 			flex-direction: column;
-			list-style-type: none;
-			justify-content: center;
-
 
 			@include breakpoint("phone") {
 				width: 100%;
