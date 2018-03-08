@@ -3,6 +3,10 @@
 	flex: 16;
 	padding: 15px 20px;
 
+	@include breakpoint("phone-landscape") {
+		padding: 10px;
+	}
+
 	.sideBar{
 		flex: 1;
 	}
@@ -13,26 +17,8 @@
 		flex: 5;
 		padding: 0px 30px;
 
-		@include breakpoint("phone") {
-			margin-top: 90px;
-			margin-left: 10px;
-			margin-right: 10px;
-		}
-
-		@include breakpoint("small-table-portrait") {
-			margin-top: 70px;
-			margin-left: 160px;
-			margin-right: 10px;
-		}
-
-		@include breakpoint("tablet-landscape") {
-			margin-top: 90px;
-			margin-left: 190px;
-			margin-right: 10px;
-		}
-
-		@include breakpoint("table-portrait") {
-			margin-top: 70px;
+		@include breakpoint("phone-landscape") {
+			padding: 0px;
 		}
 
 		.main_head_container{
@@ -41,24 +27,11 @@
 			padding: 0px 20px;
 			align-items: center;
 
-			@include breakpoint("phone") {
-				margin: 20px 20px;
-			}
-
-			@include breakpoint("small-table-portrait") {
-				font-size: $small-font-size;
-				margin: 20px 20px;
-			}
-
-			@include breakpoint("tablet-landscape") {
-				font-size: $small-font-size;
-			}
-
 			.main_head{
 				font-size: $main-header-size;
 
-				@include breakpoint("small-table-portrait") {
-					font-size: 30px;
+				@include breakpoint("phone-landscape") {
+					font-size: $normal-font-size;
 				}
 			}
 		}
@@ -68,16 +41,6 @@
 			flex: 13;
 			flex-direction: row;
 
-			@include breakpoint("phone") {
-				display: inline;
-				overflow: auto;
-			}
-
-			@include breakpoint("small-table-portrait") {
-				display: inline;
-				overflow: auto;
-			}
-
 			.left_container{
 				display: flex;
 				flex-direction: column;
@@ -85,27 +48,10 @@
 				padding-right: 20px; 
 				flex: 1;
 
-				@include breakpoint("phone") {
-					display: flex;
-					min-height: 100px;
-					max-height: 350px;
-					margin: 0px;
-					padding: 0px;
+				@include breakpoint("phone-landscape") {
+					padding-right: 0px; 
 				}
 
-				@include breakpoint("small-table-portrait") {
-					display: flex;
-					min-height: 90vmax;
-					max-height: 200px;
-					margin: 0px 10px;;
-					padding: 0px;
-				}
-
-				@include breakpoint("tablet-landscape") {
-					font-size: 12px;
-				}
-
-				
 				//스크롤바 설정
 				overflow-y: hidden;
 				scrollbar-highlight-color: $light-pink;
@@ -147,12 +93,17 @@
 				
 				.menu{
 					border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+					
 
 					.menu_list{
 						display: flex;
 						cursor: pointer;
 						flex-direction: row;
 						padding: 20px 10px;
+
+						@include breakpoint("phone-landscape") {
+							padding: 0px; 
+						}
 
 						.widget_head{
 							display: flex;
@@ -163,8 +114,9 @@
 								font-size: $normal-font-size;
 								padding: 5px;
 
-								@include breakpoint("tablet-landscape") {
+								@include breakpoint("phone-landscape") {
 									font-size: $small-font-size;
+									padding: 0px; 
 								}
 							}
 
@@ -175,6 +127,10 @@
 								overflow: hidden;
 								text-overflow: ellipsis;
 								//white-space: nowrap;
+
+								@include breakpoint("phone-landscape") {
+									font-size: $mobile-font-size;
+								}
 							}
 						}
 						
@@ -186,8 +142,8 @@
 							justify-content: center;
 							font-size: 40px;
 
-							@include breakpoint("tablet-landscape") {
-								font-size: $normal-font-size;
+							@include breakpoint("phone-landscape") {
+								font-size: $mobile-font-size;
 							}
 						}
 					}
@@ -199,8 +155,8 @@
 					flex-direction: row;
 					border-top: 1px solid rgba(170, 170, 170, 0.2);
 
-					@include breakpoint("tablet-landscape") {
-						font-size: 12px;
+					@include breakpoint("phone-landscape") {
+						font-size: 8px;
 					}
 
 					table{
@@ -208,9 +164,9 @@
 
 						th{
 							padding: 10px;
-		
-							@include breakpoint("tablet-landscape") {
-								padding: 7px;
+
+							@include breakpoint("phone-landscape") {
+								padding: 0px;
 							}
 						}
 						tr{
@@ -223,23 +179,27 @@
 								padding: 5px;
 								text-align: center;
 								border-bottom: 2px solid rgba(170, 170, 170, 0.2);
-		
-								@include breakpoint("tablet-landscape") {
-									padding: 5px;
+
+								@include breakpoint("phone-landscape") {
+									padding: 0px;
 								}
 		
 								.upDownDiv{
 									border: 1px solid rgba(170, 170, 170, 0.5);
 									font-size: 20px;
 									font-weight: 700;
-		
-									@include breakpoint("tablet-landscape") {
-										padding: 3px;
+
+									@include breakpoint("phone-landscape") {
+										font-size: $mobile-small-font-size;
 									}
-							
+			
 									.upDownBtn{
 										cursor: pointer;
 										padding: 15px;
+
+										@include breakpoint("phone-landscape") {
+											padding: 0px;
+										}
 									}
 							
 									.OrderNum{
@@ -249,6 +209,10 @@
 									.upUpBtn{
 										cursor: pointer;
 										padding: 15px;
+
+										@include breakpoint("phone-landscape") {
+											padding: 0px;
+										}
 									}
 								}
 							}
@@ -266,20 +230,8 @@
 				margin: 0px 5px;
 				padding: 10px;
 
-				@include breakpoint("phone") {
-					display: block;
-					margin: 10px 0px;
-					height: 70vmax;
-				}
-
-				@include breakpoint("small-table-portrait") {
-					display: block;
-					min-height: 80vmax;
-					margin: 10px 0px;
-				}
-
-				@include breakpoint("tablet-landscape") {
-					width: 50%;
+				@include breakpoint("phone-landscape") {
+					padding: 0px;
 				}
 
 				.orderContainer{
@@ -290,6 +242,10 @@
 					padding: 40px 70px;
 					color: $bg-color;
 					justify-content: space-around; 
+
+					@include breakpoint("phone-landscape") {
+						padding: 0px;
+					}
 
 					.orderTitle{
 						display: flex;
@@ -321,23 +277,6 @@
 						font-size: $normal-font-size;
 						font-weight: 800;
 
-						@include breakpoint("phone") {
-							padding: 5px;
-							margin: 0px;
-							font-size: $small-font-size
-						}
-
-						@include breakpoint("small-table-portrait") {
-							padding: 0px 10px;
-							font-size: $small-font-size
-						}
-
-						@include breakpoint("tablet-landscape") {
-							margin: 10px 20px;
-							padding: 5px 10px;
-							font-size: $small-font-size;
-						}
-
 						.orderHead{
 							display: flex;
 							flex: 1;
@@ -362,14 +301,6 @@
 							border-bottom: 1px dashed $bg-color;
 							font-size: $small-font-size;
 							padding: 20px;
-
-							@include breakpoint("small-table-portrait") {
-								min-height: 40vmax;
-							}
-
-							@include breakpoint("tablet-landscape") {
-								min-height: 200px;
-							}
 
 							//스크롤바 설정
 							overflow-y: hidden;
@@ -453,7 +384,7 @@
 							.orderbuttonDetail{
 								flex: 1;
 								background-color: $bg-color;
-								font-size: $big-font-size;
+								font-size: $normal-font-size;
 								margin: 0px 20px;
 								border: 0;
 								border-radius: 5px;
@@ -479,22 +410,6 @@
 			font-size: $normal-font-size;
 			padding: 10px 20px;
 			margin-left: 15px;
-
-			@include breakpoint("phone") {
-				display: none;
-				width: 100%;
-				padding: 5px;
-				margin: 0px 0px 40px 0px;
-				font-size: $small-font-size
-			}
-
-			@include breakpoint("small-table-portrait") {
-				width: 100%;
-				padding: 5px;
-				margin: 0px 0px 40px 0px;
-				font-size: $small-font-size
-			}
-
 		}
 
 		.popUp{
@@ -510,25 +425,6 @@
 			overflow: hidden;
 			padding: 20px;
 			z-index: 1010000;
-
-			@include breakpoint("phone") {
-				width: 94vmin;
-				padding: 0px;
-				left: 0%;
-				margin: 0px 10px;
-			}
-
-			@include breakpoint("small-table-portrait") {
-				width: 100vmin;
-				padding: 0px;
-				left: 0%;
-			}
-
-			@include breakpoint("table-portrait") {
-				width: 98vmin;
-				padding: 0px;
-				left: 1%;
-			}
 
 			.popUp__close{
 				float: right;
@@ -570,13 +466,6 @@
 				font-weight: 400;
 				overflow: auto;
 				max-height: 300px;
-
-				@include breakpoint("small-table-portrait") {
-					max-height: 350px;
-				}
-				@include breakpoint("table-portrait") {
-					max-height: 400px;
-				}
 
 				overflow-y: hidden;
 				scrollbar-highlight-color: $light-pink;
@@ -671,6 +560,11 @@
 		input[type="number"]{
 			width: 40px;
 			text-align: center;
+
+			@include breakpoint("phone-landscape") {
+				font-size: $mobile-small-font-size;
+				width: 10px;
+			}
 		}
 		input[type="number"]::-webkit-outer-spin-button,
 		input[type="number"]::-webkit-inner-spin-button {

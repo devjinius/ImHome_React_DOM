@@ -6,25 +6,8 @@
 	background-color: $bg-color;
 	border-bottom: 2px dashed #aaa;
 
-	@include breakpoint("phone") {
-		display: block;
-		font-size: $small-font-size;
-	}
-
 	@include breakpoint("phone-landscape") {
-		font-size: $small-font-size;
-	}
-
-	@include breakpoint("small-table-portrait") {
-		font-size: 12px;
-	}
-
-	@include breakpoint("tablet-landscape") {
-		font-size: $small-font-size;
-	}
-
-	@include breakpoint("table-portrait") {
-		font-size: $small-font-size;
+		font-size: $mobile-font-size;
 	}
 
 	.header{
@@ -33,18 +16,10 @@
 		justify-content: flex-start;
 		align-items: center;
 
-		@include breakpoint("phone-landscape") {
-			align-self: center;
-		}
-
 		.navbar_brand{
 			font-size: $main-header-size;
 
 			@include breakpoint("phone-landscape") {
-				font-size: $big-font-size;
-			}
-
-			@include breakpoint("small-table-portrait") {
 				font-size: $big-font-size;
 			}
 		}
@@ -52,6 +27,10 @@
 		.upper_word{
 			font-size: $small-font-size;
 			align-self: baseline;
+
+			@include breakpoint("phone-landscape") {
+				font-size: $mobile-font-size;
+			}
 		}
 	}
 
@@ -60,54 +39,19 @@
 		justify-content: flex-end;
 		flex: 2;
 
-		@include breakpoint("phone") {
-			margin: 10px;
-		}
-
-		@include breakpoint("phone-landscape") {
-			flex: 3;
-			margin: 10px;
-		}
-
-		@include breakpoint("small-table-portrait") {
-			flex: 2;
-		}
-
-		@include breakpoint("tablet-landscape") {
-			flex: 2;
-		}
-
-		@include breakpoint("table-portrait") {
-			flex: 2;
-		}
-		
 		ul {
 			display: flex;
 			align-items: center;
 
-			@include breakpoint("phone") {
-				display: table;
-			}
-
 			li {
 				padding: 0px 20px;
 
-				a {
-					@include breakpoint("phone") {
-						padding: 10px 20px;
-					}
-		
-					@include breakpoint("phone-landscape") {
-						padding: 8px;
-					}
-		
-					@include breakpoint("small-table-portrait") {
-						padding: 8px;
-					}
+				@include breakpoint("phone-landscape") {
+					padding: 0px 5px;
+				}
 
-					&a:hover {
-						color:  $light-pink;
-					}
+				a:hover {
+					color:  $light-pink;
 				}
 			}
 		}

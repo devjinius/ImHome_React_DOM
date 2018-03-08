@@ -3,35 +3,9 @@
 	font-size: $normal-font-size;
 	font-weight: 700;
 
-	@include breakpoint("phone") {
-		display: block;
-		font-size: $small-font-size;
-		margin: 44px 0px;
-		width: 100%;
-	}
-
 	@include breakpoint("phone-landscape") {
-		font-size: $small-font-size;
-		margin: 0px 10px;
-		top: 80px;
+		font-size: $mobile-font-size;
 	}
-
-	@include breakpoint("small-table-portrait") {
-		font-size: $small-font-size;
-		margin: 0px 10px;
-		top: 80px;
-	}
-
-	@include breakpoint("tablet-landscape") {
-		font-size: $small-font-size;
-		margin: 0px 10px;
-		top: 80px;
-	}
-
-	@include breakpoint("table-portrait") {
-		font-size: $small-font-size;
-	}
-
 
 	.sidebar_dropdown{
 		font-size: $normal-font-size;
@@ -43,16 +17,11 @@
 		text-align: center;
 		border-top: 2px dashed #aaa;
 		border-bottom: 2px dashed #aaa;
-
 		cursor: pointer;
 
 		&:hover{
 			color: $bg-color;
 			background-color: $light-pink;
-		}
-
-		@include breakpoint("phone") {
-			display: block;
 		}
 	}
 
@@ -68,12 +37,8 @@
 			padding: 0 10px;
 			flex-direction: column;
 
-			@include breakpoint("phone") {
-				width: 100%;
-				background-color: $bg-color;
-			}
-
 			@include breakpoint("phone-landscape") {
+				padding: 0px;
 			}
 
 			@include breakpoint("small-table-portrait") {
