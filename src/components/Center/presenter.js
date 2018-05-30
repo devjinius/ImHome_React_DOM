@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.scss";
 import MdClose from "react-icons/lib/md/close";
-import SideBar from "components/SideBar";
+import SideBar from "../SideBar";
 
 const Center = props => {
   return (

@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import user from "redux/modules/users";
+import user from "./modules/users";
 import { routerReducer, routerMiddleware } from "react-router-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import createHistory from "history/createBrowserHistory";
