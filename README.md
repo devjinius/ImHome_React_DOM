@@ -3,8 +3,6 @@
 
 # 2018-05-30 Error Catch
 
----
-
 config/webpack.config.dev.js 파일에서 css정의하는 쪽을 물리적 경로로 잡아놔서 에러가 잡힘
 
 ```
