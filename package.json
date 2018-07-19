@@ -43,14 +43,9 @@
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.7",
-    "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-vector-icons": "^0.0.1",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "reset-css": "^2.2.1",
-    "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "^1.0.1",
@@ -65,9 +60,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "babel": {
-    "presets": [
-      "react-app"
-    ]
+    "presets": ["react-app"]
   },
   "eslintConfig": {
     "extends": "react-app"

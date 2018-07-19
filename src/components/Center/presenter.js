@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./styles.scss";
-import MdClose from "react-icons/lib/md/close";
-import SideBar from "../SideBar";
+import React from "react"
+import styles from "./styles.css"
+import MdClose from "react-icons/lib/md/close"
+import SideBar from "../SideBar"
 
 const Center = props => {
   return (
@@ -64,11 +64,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -89,11 +85,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -114,11 +106,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -139,11 +127,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -164,11 +148,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -189,11 +169,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -249,11 +225,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -274,11 +246,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -299,11 +267,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -324,11 +288,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -349,11 +309,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -374,11 +330,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -434,11 +386,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -459,11 +407,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -484,11 +428,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -509,11 +449,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -534,11 +470,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -559,11 +491,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -619,11 +547,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -644,11 +568,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -669,11 +589,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -694,11 +610,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -719,11 +631,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -744,11 +652,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -804,11 +708,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -829,11 +729,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -854,11 +750,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -879,11 +771,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -904,11 +792,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -929,11 +813,7 @@ const Center = props => {
                       <td>
                         <div className={styles.upDownDiv}>
                           <span className={styles.upDownBtn}>-</span>
-                          <input
-                            className={styles.OrderNum}
-                            type="number"
-                            placeholder="0"
-                          />
+                          <input className={styles.OrderNum} type="number" placeholder="0" />
                           <span className={styles.upUpBtn}>+</span>
                         </div>
                       </td>
@@ -956,57 +836,39 @@ const Center = props => {
                 </div>
                 <div className={styles.productList}>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
-                    <li className={styles.productName}>
-                      saasdfasdfsadfsdfsdfasdfdf
-                    </li>
+                    <li className={styles.productName}>saasdfasdfsadfsdfsdfasdfdf</li>
                     <li className={styles.productCost}>sadf</li>
                   </ul>
                   <ul>
@@ -1047,12 +909,8 @@ const Center = props => {
                   <div className={styles.orderPrice}>0</div>
                 </div>
                 <div className={styles.orderbutton}>
-                  <button className={styles.orderbuttonDetail}>
-                    주문 저장
-                  </button>
-                  <button className={styles.orderbuttonDetail}>
-                    주문 하기
-                  </button>
+                  <button className={styles.orderbuttonDetail}>주문 저장</button>
+                  <button className={styles.orderbuttonDetail}>주문 하기</button>
                 </div>
               </div>
             </div>
@@ -1065,11 +923,7 @@ const Center = props => {
         </div>
 
         <div id={"popUp"} className={styles.popUp}>
-          <MdClose
-            size={50}
-            className={styles.popUp__close}
-            onClick={props.showPopup}
-          />
+          <MdClose size={50} className={styles.popUp__close} onClick={props.showPopup} />
           <span lang={"en"} className={styles.popUp__title}>
             Food Menu
           </span>
@@ -1109,11 +963,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1126,11 +976,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1143,11 +989,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1160,11 +1002,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1177,11 +1015,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1194,11 +1028,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1211,11 +1041,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1228,11 +1054,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1245,11 +1067,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1262,11 +1080,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1279,11 +1093,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1296,11 +1106,7 @@ const Center = props => {
                   <td>
                     <div className={styles.upDownDiv}>
                       <span className={styles.upDownBtn}>-</span>
-                      <input
-                        className={styles.OrderNum}
-                        type="number"
-                        placeholder="0"
-                      />
+                      <input className={styles.OrderNum} type="number" placeholder="0" />
                       <span className={styles.upUpBtn}>+</span>
                     </div>
                   </td>
@@ -1311,7 +1117,7 @@ const Center = props => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Center;
+export default Center
