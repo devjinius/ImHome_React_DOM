@@ -126,12 +126,12 @@ export const Table = styled.table`
 `
 
 /**
- *   Table 내 TR
+ * Table 내 TR
  */
 export const Tr = styled.tr`margin: 0px;`
 
 /**
- *  Table 내 TD
+ * Table 내 TD
  */
 export const Td = styled.td`
   font-family: 'Nanum Gothic', sans-serif;
@@ -148,57 +148,4 @@ export const Td = styled.td`
 /**
  * 노란색 버튼
  */
-export const YellowButton = styled.button`
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: 800;
-  width: 200px;
-  height: 50px;
-  background-color: #ffffff;
-  border: solid 2px #fe4c8d;
-  border-radius: 3px;
-`
-
-//----------------------------------------------
-
-/**
- * 가입하기 버튼
- */
-export const RegisterButton = styled.button`
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: 800;
-  width: 200px;
-  height: 50px;
-  background-color: #ffffff;
-  border: solid 2px #fe4c8d;
-  border-radius: 3px;
-`
-
-/**
- * 회원가입 Default Input 
- */
-export const RegisterInput = styled.input`
-  font-family: 'Nanum Gothic', sans-serif;
-  width: 625px;
-  height: 51px;
-  border: solid 3px #c2c2c2;
-`
-
-/**
- * 회원가입 Main Text 
- */
-export const HeadText = styled.span`
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: bold;
-  color: #000000;
-  font-size: 34px;
-`
-
-/**
- * 회원가입 Sub Text 
- */
-export const SubText = styled.span`
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: bold;
-  color: #707070;
-  font-size: 24px;
-`
+export const YellowButton = styled.button``

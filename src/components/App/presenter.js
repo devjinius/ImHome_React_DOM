@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
 import { Route, Switch } from "react-router-dom"
+
+//회원가입
 // import {
 //   RegisterButton,
 //   RegisterInput,
@@ -13,19 +15,23 @@ import { Route, Switch } from "react-router-dom"
 //   Main,
 //   HeaderDiv
 // } from "common/register"
-import {
-  HeaderDiv,
-  NavDiv,
-  Main,
-  Logo,
-  HeaderItem,
-  NavItem,
-  MainHeadText,
-  BigLine,
-  Table,
-  Td,
-  Tr
-} from "common/main"
+
+//메인페이지
+// import {
+//   HeaderDiv,
+//   NavDiv,
+//   Main,
+//   Logo,
+//   HeaderItem,
+//   NavItem,
+//   MainHeadText,
+//   BigLine,
+//   Table,
+//   Td,
+//   Tr
+// } from "common/main"
+
+import { MainDiv, MainText, Button, SubText } from "common/userDel"
 
 const App = props => {
   // return (
@@ -51,58 +57,69 @@ const App = props => {
 
   // )
 
+  // 메인 페이지
+  // return [
+  //   <HeaderDiv>
+  //     <Logo />
+  //     <ul>
+  //       <HeaderItem>ItemText</HeaderItem>
+  //       <HeaderItem>ItemText</HeaderItem>
+  //       <HeaderItem>ItemText</HeaderItem>
+  //       <HeaderItem>ItemText</HeaderItem>
+  //     </ul>
+  //   </HeaderDiv>,
+  //   <NavDiv>
+  //     <ul>
+  //       <NavItem>ItemText</NavItem>
+  //       <NavItem>ItemText</NavItem>
+  //       <NavItem>ItemText</NavItem>
+  //       <NavItem>ItemText</NavItem>
+  //     </ul>
+  //   </NavDiv>,
+  //   <Main>
+  //     <MainHeadText>Main Head</MainHeadText>
+  //     <BigLine />
+  //     <Table>
+  //       <Tr>
+  //         <Td gray>test</Td>
+  //         <Td>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td last>test</Td>
+  //       </Tr>
+  //       <Tr>
+  //         <Td gray>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td gray last>
+  //           test
+  //         </Td>
+  //       </Tr>
+  //       <Tr>
+  //         <Td gray>test</Td>
+  //         <Td>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td last>test</Td>
+  //       </Tr>
+  //       <Tr>
+  //         <Td gray>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td gray>test</Td>
+  //         <Td gray last>
+  //           test
+  //         </Td>
+  //       </Tr>
+  //     </Table>
+  //   </Main>
+  // ]
+
+  //회원삭제
   return [
-    <HeaderDiv>
-      <Logo />
-      <ul>
-        <HeaderItem>ItemText</HeaderItem>
-        <HeaderItem>ItemText</HeaderItem>
-        <HeaderItem>ItemText</HeaderItem>
-        <HeaderItem>ItemText</HeaderItem>
-      </ul>
-    </HeaderDiv>,
-    <NavDiv>
-      <ul>
-        <NavItem>ItemText</NavItem>
-        <NavItem>ItemText</NavItem>
-        <NavItem>ItemText</NavItem>
-        <NavItem>ItemText</NavItem>
-      </ul>
-    </NavDiv>,
-    <Main>
-      <MainHeadText>Main Head</MainHeadText>
-      <BigLine />
-      <Table>
-        <Tr>
-          <Td gray>test</Td>
-          <Td>test</Td>
-          <Td gray>test</Td>
-          <Td last>test</Td>
-        </Tr>
-        <Tr>
-          <Td gray>test</Td>
-          <Td gray>test</Td>
-          <Td gray>test</Td>
-          <Td gray last>
-            test
-          </Td>
-        </Tr>
-        <Tr>
-          <Td gray>test</Td>
-          <Td>test</Td>
-          <Td gray>test</Td>
-          <Td last>test</Td>
-        </Tr>
-        <Tr>
-          <Td gray>test</Td>
-          <Td gray>test</Td>
-          <Td gray>test</Td>
-          <Td gray last>
-            test
-          </Td>
-        </Tr>
-      </Table>
-    </Main>
+    <MainDiv>
+      <MainText>MainText</MainText>
+      <Button>취소하기</Button>
+      <Button>삭제하기</Button>
+      <SubText>삭제시 복구안됨</SubText>
+    </MainDiv>
   ]
 }
 
