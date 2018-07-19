@@ -1,12 +1,12 @@
-import { connect } from 'react-redux';
-import Container from './container';
+import { connect } from "react-redux"
+import Container from "./container"
 
 const mapStateToProps = (state, ownProps) => {
-  const { user } = state;
+  const { user } = state
   return {
     isLoggedIn: user.isLoggedIn
-  };
-};
+  }
+}
 
 //액션을 위한 디스패치
 // const mapDispatchToProps = (dispatch, ownProps) => {
@@ -17,4 +17,4 @@ const mapStateToProps = (state, ownProps) => {
 //   };
 // };
 
-export default connect(mapStateToProps)(Container);
+export default connect(mapStateToProps)(Container)

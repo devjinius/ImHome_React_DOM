@@ -1,30 +1,39 @@
 import React from "react"
 import { Route, Switch } from "react-router-dom"
-import styles from "./styles.css"
-import Center from "../Center"
-import Navigator from "../Navigator"
+import {
+  RegisterButton,
+  RegisterInput,
+  HeadText,
+  SubText,
+  ItemText,
+  BigLine,
+  MiddleLine,
+  HeaderBackground,
+  Logo,
+  Main,
+  HeaderDiv
+} from "common/register"
 
-const App = props => [
-  props.isLoggedIn
-    ? <div className={styles.mainBody}>
-        <Navigator key={1} {...props} styles={styles} />
-        <PrivateRoutes key={3} />
-      </div>
-    : <PrivateRoutes key={3} />
-  //props.isLoggedIn ? <PrivateRoutes key={3} /> : <PrivateRoutes key={3} />,
-  //props.isLoggedIn ? <PrivateRoutes key={3} /> : <PublicRoutes key={3}/>,
-]
-
-const PrivateRoutes = props =>
-  <Switch>
-    <Route exact path="/" component={Center} styles={styles} />
-    <Route exact path="/explore" render={() => "explore"} />
-  </Switch>
-
-const PublicRoutes = props =>
-  <Switch>
-    <Route exact path="/" render={() => "login"} />
-    <Route exact path="/register" render={() => "register"} />
-  </Switch>
+const App = props => {
+  return (
+    <Main>
+      <HeaderDiv>
+        <HeaderBackground>
+          <Logo />
+        </HeaderBackground>
+      </HeaderDiv>
+      <BigLine />
+      <RegisterInput place />
+      <HeadText>headText</HeadText>
+      <SubText>subText</SubText>
+      <ItemText>itemText</ItemText>
+      <ItemText>itemText</ItemText>
+      <ItemText>itemText</ItemText>
+      <ItemText>itemText</ItemText>
+      <MiddleLine />
+      <RegisterButton />
+    </Main>
+  )
+}
 
 export default App

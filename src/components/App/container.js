@@ -1,8 +1,9 @@
-import React from 'react'
-import App from './presenter'
+import React, { Component } from "react"
+import App from "./presenter"
 
-const Container = props => < App { ...props
+class Container extends Component {
+  render() {
+    return <App {...this.props} />
+  }
 }
-/>
-
 export default Container
