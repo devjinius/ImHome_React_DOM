@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
 import { Route, Switch } from "react-router-dom"
+import Header from "components/Header"
+import Nav from "components/Navigator"
 
 //회원가입
 // import {
@@ -36,7 +38,6 @@ import { MainDiv, MainText, Button, SubText } from "common/userDel"
 const App = props => {
   // return (
   //   // 회원가입 부분
-
   //      <Main>
   //     <HeaderDiv>
   //       <HeaderBackground>
@@ -54,9 +55,7 @@ const App = props => {
   //     <MiddleLine />
   //     <RegisterButton />
   //   </Main>
-
   // )
-
   // 메인 페이지
   // return [
   //   <HeaderDiv>
@@ -111,16 +110,16 @@ const App = props => {
   //     </Table>
   //   </Main>
   // ]
-
   //회원삭제
-  return [
-    <MainDiv>
-      <MainText>MainText</MainText>
-      <Button>취소하기</Button>
-      <Button>삭제하기</Button>
-      <SubText>삭제시 복구안됨</SubText>
-    </MainDiv>
-  ]
+  // return [
+  //   <MainDiv>
+  //     <MainText>MainText</MainText>
+  //     <Button>취소하기</Button>
+  //     <Button>삭제하기</Button>
+  //     <SubText>삭제시 복구안됨</SubText>
+  //   </MainDiv>
+  // ]
+  return [<Header />, <Nav />]
 }
 
 export default App

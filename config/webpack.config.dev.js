@@ -92,7 +92,8 @@ module.exports = {
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       "react-native": "react-native-web",
       common: path.resolve(__dirname, "../src/styledCom"),
-      img: path.resolve(__dirname, "../src/resource/img")
+      img: path.resolve(__dirname, "../src/resource/img"),
+      components: path.resolve(__dirname, "../src/components")
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
