@@ -1,6 +1,7 @@
 import styled, { injectGlobal } from "styled-components"
 import WebFont from "webfontloader"
 import logo from "img/main/m_logo.png"
+import navImgB from "img/main/icon_b.png"
 
 /**
  * Google Font 호출해서 사용을 위한 webfont추가
@@ -34,12 +35,14 @@ export const HeaderDiv = styled.div`
  * Nav Div
  */
 export const NavDiv = styled.div`
-  position: absolute;
-  top: 226px;
-  left: 0px;
+  display: inline-block;
+  /* position: absolute; */
   background-color: #ffffff;
-  width: 200px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 33px;
   height: 100%;
+  padding-left: 20px;
 `
 
 /**
@@ -64,6 +67,18 @@ export const Logo = styled.div`
   background-size: auto;
   width: 217px;
   height: 75px;
+`
+
+/**
+ * Nav Image
+ */
+export const NavImg = styled.img.attrs({
+  src: navImgB
+})`
+  width: 33px;
+  height: 33px;
+  :hover {
+  }
 `
 
 /**
@@ -92,19 +107,20 @@ export const HeaderItem = styled.li`
 `
 
 /**
- * Header 메뉴 Ul
+ * Nav 메뉴 Ul
  */
-export const NavList = styled.ul`display: block;`
+export const NavList = styled.ul`
+  display: block;
+  padding: 0px 20px 20px 20px;
+`
 
 /**
  * Nav 메뉴 List
  */
 export const NavItem = styled.li`
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: 700;
-  font-size: 33px;
   color: #555555;
   list-style: none;
+  padding: 20px 20px 10px 20px;
   :hover {
     background-color: #fe4c8d;
     color: #ffffff;
