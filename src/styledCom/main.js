@@ -26,13 +26,12 @@ injectGlobal`
  * Header Div
  */
 export const HeaderDiv = styled.div`
-  background-color: #ffffff;
-  width: 100%;
-  height: 225px;
   border-bottom: dotted 1px #fe4c8d;
+  color: #ffffff;
+  padding: 20px 20px 0px 20px;
 `
 /**
- * Header Div
+ * Nav Div
  */
 export const NavDiv = styled.div`
   position: absolute;
@@ -60,9 +59,19 @@ export const Main = styled.div`
  * Logo
  */
 export const Logo = styled.div`
-  background-image: url(${logo});
-  width: 219px;
-  height: 77px;
+  display: inline-block;
+  background: url(${logo}) no-repeat;
+  background-size: auto;
+  width: 217px;
+  height: 75px;
+`
+
+/**
+ * Header 메뉴 Ul
+ */
+export const HeaderList = styled.ul`
+  display: inline-block;
+  float: right;
 `
 
 /**
@@ -72,13 +81,20 @@ export const HeaderItem = styled.li`
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 800;
   font-size: 31px;
-  color: #000000;
+  color: ${props => (props.checked == null ? "#000000" : "#fe4c8d")};
+  cursor: pointer;
   list-style: none;
+  padding: 10px;
   float: left;
   :hover {
     color: #fe4c8d;
   }
 `
+
+/**
+ * Header 메뉴 Ul
+ */
+export const NavList = styled.ul`display: block;`
 
 /**
  * Nav 메뉴 List
