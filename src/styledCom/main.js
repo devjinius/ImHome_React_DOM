@@ -70,6 +70,7 @@ export const Logo = styled.div`
 `
 
 /**
+<<<<<<< HEAD
  * Nav Image
  */
 export const NavImg = styled.img.attrs({
@@ -82,6 +83,8 @@ export const NavImg = styled.img.attrs({
 `
 
 /**
+=======
+>>>>>>> 11a080a034bb5b7ec229b5c27234b4c00150f3a7
  * Header 메뉴 Ul
  */
 export const HeaderList = styled.ul`
@@ -107,12 +110,18 @@ export const HeaderItem = styled.li`
 `
 
 /**
+<<<<<<< HEAD
  * Nav 메뉴 Ul
  */
 export const NavList = styled.ul`
   display: block;
   padding: 0px 20px 20px 20px;
 `
+=======
+ * Header 메뉴 Ul
+ */
+export const NavList = styled.ul`display: block;`
+>>>>>>> 11a080a034bb5b7ec229b5c27234b4c00150f3a7
 
 /**
  * Nav 메뉴 List
