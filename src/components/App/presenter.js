@@ -1,7 +1,7 @@
-import React, { Fragment } from "react"
-import { Route, Switch } from "react-router-dom"
-import Header from "components/Header"
-import Nav from "components/Navigator"
+import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Header from 'components/Header';
+import Nav from 'components/Navigator';
 
 //회원가입
 // import {
@@ -33,7 +33,7 @@ import Nav from "components/Navigator"
 //   Tr
 // } from "common/main"
 
-import { MainDiv, MainText, Button, SubText } from "common/userDel"
+import { MainDiv, MainText, Button, SubText } from 'common/userDel';
 
 const App = props => {
   // return (
@@ -111,15 +111,21 @@ const App = props => {
   //   </Main>
   // ]
   //회원삭제
-  // return [
-  //   <MainDiv>
-  //     <MainText>MainText</MainText>
-  //     <Button>취소하기</Button>
-  //     <Button>삭제하기</Button>
-  //     <SubText>삭제시 복구안됨</SubText>
-  //   </MainDiv>
-  // ]
-  return [<Header />, <Nav />]
-}
+  return [
+    <MainDiv>
+      <div>
+        <MainText>회원목록에서 삭제 하시겠습니까?</MainText>
+      </div>
+      <div>
+        <Button>취소하기</Button>
+        <Button>삭제하기</Button>
+      </div>
+      <div>
+        <SubText>삭제가 되면 복구가 되지 않습니다.</SubText>
+      </div>
+    </MainDiv>
+  ];
+  // return [<Header />, <Nav />]
+};
 
-export default App
+export default App;
