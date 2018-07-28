@@ -2,6 +2,8 @@ import styled, { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
 import logo from 'img/main/m_logo.png';
 import navImgB from 'img/main/icon_b.png';
+import delButton from 'img/main/m-del-bt.png';
+import reviseButton from 'img/main/revise-bt.png';
 
 /**
  * Google Font 호출해서 사용을 위한 webfont추가
@@ -14,6 +16,7 @@ WebFont.load({
 
 /**
  * body적용을 위한 css
+ * + ul태그에 있는 기본 css 속성 제거
  */
 injectGlobal`
     body {
@@ -21,7 +24,12 @@ injectGlobal`
       background-color: #ffffff;
       margin: 0px;
     }
-`;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  `;
 
 /**
  * Header Div
@@ -30,6 +38,9 @@ export const HeaderDiv = styled.div`
   border-bottom: dotted 1px #fe4c8d;
   color: #ffffff;
   padding: 20px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 /**
  * Nav Div
@@ -40,22 +51,48 @@ export const NavDiv = styled.div`
   background-color: #ffffff;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
-  font-size: 33px;
-  height: 100%;
+  font-size: 25px;
   padding-left: 20px;
+  width: 260px;
+`;
+
+/**
+ * Content Div
+ */
+export const ContentDiv = styled.div`
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+`;
+
+/**
+ * Content Div
+ */
+export const ContentTopDiv = styled.div`
+  background-color: #ffffff;
+  margin-bottom: 50px;
+`;
+
+/**
+ * Content Div
+ */
+export const ContentBottomDiv = styled.div`
+  background-color: #ffffff;
+  margin-bottom: 50px;
 `;
 
 /**
  * Main Div
  */
 export const Main = styled.div`
-  position: absolute;
-  top: 226px;
-  left: 230px;
   background-color: #ffffff;
-  width: 100%;
-  height: 100%;
+  width: 1700px;
+  padding-right: 20px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 /**
@@ -95,7 +132,7 @@ export const HeaderList = styled.ul`
 export const HeaderItem = styled.li`
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 800;
-  font-size: 31px;
+  font-size: 23px;
   color: ${props => (props.checked == null ? '#000000' : '#fe4c8d')};
   cursor: pointer;
   list-style: none;
@@ -130,20 +167,20 @@ export const NavItem = styled.li`
 /**
  * Main Head Text
  */
-export const MainHeadText = styled.span`
+export const MainHeadText = styled.div`
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: bold;
   color: #000000;
-  font-size: 34px;
+  font-size: 26px;
 `;
 
 /**
  * 큰 크기 Line
  */
 export const BigLine = styled.hr`
-  width: 70%;
+  width: 100%;
   border: solid 1px #c2c2c2;
-  margin: 0;
+  margin: 5px 0px;
 `;
 
 /**
@@ -154,7 +191,7 @@ export const Table = styled.table`
   border-top: solid 4px #ed145b;
   border-bottom: solid 4px #ed145b;
   border-collapse: collapse;
-  margin: 5px;
+  margin: 20px 5px 20px 5px;
 `;
 
 /**
@@ -162,6 +199,7 @@ export const Table = styled.table`
  */
 export const Tr = styled.tr`
   margin: 0px;
+  height: 45px;
 `;
 
 /**
@@ -170,7 +208,7 @@ export const Tr = styled.tr`
 export const Td = styled.td`
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   color: #000000;
   background-color: ${props => (props.gray == null ? '#ffffff' : '#f7f8f9')};
   margin: 0px;
@@ -180,6 +218,40 @@ export const Td = styled.td`
 `;
 
 /**
- * 노란색 버튼
+ * Nav 내 Icon
  */
-export const YellowButton = styled.button``;
+export const NavIcon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+
+/**
+ * 삭제 버튼
+ */
+export const DelButton = styled.button`
+  background-image: url(${delButton});
+  width: 134px;
+  height: 55px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  height: 67px;
+  border: 0px;
+  float: right;
+`;
+
+/**
+ * 수정 버튼
+ */
+export const ReviseButton = styled.button`
+  background-image: url(${reviseButton});
+  width: 200px;
+  height: 65px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  border: 0px;
+  float: right;
+`;
