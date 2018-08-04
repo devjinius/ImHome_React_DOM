@@ -23,28 +23,36 @@ import Nav from 'components/Navigator';
 // } from 'common/register';
 
 //메인페이지
-import {
-  HeaderDiv,
-  NavDiv,
-  Main,
-  Logo,
-  HeaderItem,
-  NavItem,
-  MainHeadText,
-  BigLine,
-  Table,
-  Td,
-  Tr,
-  ContentDiv,
-  NavIcon,
-  DelButton,
-  ReviseButton,
-  ContentBottomDiv,
-  ContentTopDiv
-} from 'common/main';
-import navIcon from 'img/main/icon_b.png';
+// import {
+//   HeaderDiv,
+//   NavDiv,
+//   Main,
+//   Logo,
+//   HeaderItem,
+//   NavItem,
+//   MainHeadText,
+//   BigLine,
+//   Table,
+//   Td,
+//   Tr,
+//   ContentDiv,
+//   NavIcon,
+//   DelButton,
+//   ReviseButton,
+//   ContentBottomDiv,
+//   ContentTopDiv
+// } from 'common/main';
+// import navIcon from 'img/main/icon_b.png';
 
-// import { MainDiv, MainText, Button, SubText } from 'common/userDel';
+import {
+  MainDiv,
+  TopDiv,
+  CloseButton,
+  MainText,
+  MainButtonDiv,
+  Button,
+  SubText
+} from 'common/userDel';
 
 const App = props => {
   // return (
@@ -125,137 +133,140 @@ const App = props => {
   //   </Main>
   // );
   // 메인 페이지
-  return [
-    <HeaderDiv>
-      <Logo />
-      <ul>
-        <HeaderItem>품목관리</HeaderItem>
-        <HeaderItem>주문내역조회</HeaderItem>
-        <HeaderItem>출고내역조회</HeaderItem>
-        <HeaderItem>회원정보</HeaderItem>
-        <HeaderItem>로그아웃</HeaderItem>
-      </ul>
-    </HeaderDiv>,
-    <ContentDiv>
-      <NavDiv>
-        <ul>
-          <NavItem>
-            <NavIcon src={navIcon} alt={'navIcon'} />분당점
-          </NavItem>
-          <NavItem>
-            <NavIcon src={navIcon} alt={'navIcon'} />백현점
-          </NavItem>
-          <NavItem>
-            <NavIcon src={navIcon} alt={'navIcon'} />광주탄천점
-          </NavItem>
-          <NavItem>
-            <NavIcon src={navIcon} alt={'navIcon'} />이대본점
-          </NavItem>
-          <NavItem>
-            <NavIcon src={navIcon} alt={'navIcon'} />용인죽전점
-          </NavItem>
-        </ul>
-      </NavDiv>
-      <Main>
-        <ContentTopDiv>
-          <MainHeadText>회원정보 조회</MainHeadText>
-          <BigLine />
-          <Table>
-            <Tr>
-              <Td gray>지점명</Td>
-              <Td>분당점</Td>
-              <Td gray />
-              <Td last />
-            </Tr>
-            <Tr>
-              <Td gray>대표자</Td>
-              <Td gray>최장길</Td>
-              <Td gray>아이디</Td>
-              <Td gray last>
-                imhome
-              </Td>
-            </Tr>
-            <Tr>
-              <Td gray>회사명</Td>
-              <Td>아임홈 분당점</Td>
-              <Td gray>사업자 번호</Td>
-              <Td last>426-50-00326 </Td>
-            </Tr>
-            <Tr>
-              <Td gray>사업장주소</Td>
-              <Td gray>경기도 성남시 분당구 황새울로 85번길 12 1층</Td>
-              <Td gray>이메일 주소</Td>
-              <Td gray last>
-                imhome@imhome.com
-              </Td>
-            </Tr>
-            <Tr>
-              <Td gray>연락처</Td>
-              <Td>000-000-0000</Td>
-              <Td gray>/</Td>
-              <Td last>/</Td>
-            </Tr>
-          </Table>
-          <ReviseButton>회원정보수정</ReviseButton>
-        </ContentTopDiv>
-        <ContentBottomDiv>
-          <MainHeadText>회원목록 및 정보</MainHeadText>
-          <Table>
-            <Tr>
-              <Td gray>등록일자</Td>
-              <Td gray>지점명</Td>
-              <Td gray>대표자</Td>
-              <Td gray>아이디</Td>
-              <Td gray>사업자번호</Td>
-              <Td gray last>
-                총 거래금액(원)
-              </Td>
-            </Tr>
-            <Tr>
-              <Td>2018-01-25</Td>
-              <Td>분당점</Td>
-              <Td>최창길</Td>
-              <Td>imhome</Td>
-              <Td>426-50-00326</Td>
-              <Td last>10,000,500</Td>
-            </Tr>
-            <Tr>
-              <Td>2018-01-25</Td>
-              <Td>분당점</Td>
-              <Td>최창길</Td>
-              <Td>imhome</Td>
-              <Td>426-50-00326</Td>
-              <Td last>5,000,500</Td>
-            </Tr>
-            <Tr>
-              <Td>2018-01-25</Td>
-              <Td>백현점</Td>
-              <Td>최창길</Td>
-              <Td>imhome</Td>
-              <Td>426-50-00326</Td>
-              <Td last>800,500</Td>
-            </Tr>
-          </Table>
-          <DelButton>회원삭제</DelButton>
-        </ContentBottomDiv>
-      </Main>
-    </ContentDiv>
-  ];
-  //회원삭제
   // return [
-  //   <MainDiv>
-  //     <div>
-  //       <MainText>회원목록에서 삭제 하시겠습니까?</MainText>
-  //     </div>
-  //     <div>
-  //       <Button>취소하기</Button>
-  //       <Button>삭제하기</Button>
-  //     </div>
-  //     <div>
-  //       <SubText>삭제가 되면 복구가 되지 않습니다.</SubText>
-  //     </div>
-  //   </MainDiv>
+  //   <HeaderDiv>
+  //     <Logo />
+  //     <ul>
+  //       <HeaderItem>품목관리</HeaderItem>
+  //       <HeaderItem>주문내역조회</HeaderItem>
+  //       <HeaderItem>출고내역조회</HeaderItem>
+  //       <HeaderItem>회원정보</HeaderItem>
+  //       <HeaderItem>로그아웃</HeaderItem>
+  //     </ul>
+  //   </HeaderDiv>,
+  //   <ContentDiv>
+  //     <NavDiv>
+  //       <ul>
+  //         <NavItem>
+  //           <NavIcon src={navIcon} alt={'navIcon'} />분당점
+  //         </NavItem>
+  //         <NavItem>
+  //           <NavIcon src={navIcon} alt={'navIcon'} />백현점
+  //         </NavItem>
+  //         <NavItem>
+  //           <NavIcon src={navIcon} alt={'navIcon'} />광주탄천점
+  //         </NavItem>
+  //         <NavItem>
+  //           <NavIcon src={navIcon} alt={'navIcon'} />이대본점
+  //         </NavItem>
+  //         <NavItem>
+  //           <NavIcon src={navIcon} alt={'navIcon'} />용인죽전점
+  //         </NavItem>
+  //       </ul>
+  //     </NavDiv>
+  //     <Main>
+  //       <ContentTopDiv>
+  //         <MainHeadText>회원정보 조회</MainHeadText>
+  //         <BigLine />
+  //         <Table>
+  //           <Tr>
+  //             <Td gray>지점명</Td>
+  //             <Td>분당점</Td>
+  //             <Td gray />
+  //             <Td last />
+  //           </Tr>
+  //           <Tr>
+  //             <Td gray>대표자</Td>
+  //             <Td gray>최장길</Td>
+  //             <Td gray>아이디</Td>
+  //             <Td gray last>
+  //               imhome
+  //             </Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td gray>회사명</Td>
+  //             <Td>아임홈 분당점</Td>
+  //             <Td gray>사업자 번호</Td>
+  //             <Td last>426-50-00326 </Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td gray>사업장주소</Td>
+  //             <Td gray>경기도 성남시 분당구 황새울로 85번길 12 1층</Td>
+  //             <Td gray>이메일 주소</Td>
+  //             <Td gray last>
+  //               imhome@imhome.com
+  //             </Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td gray>연락처</Td>
+  //             <Td>000-000-0000</Td>
+  //             <Td gray>/</Td>
+  //             <Td last>/</Td>
+  //           </Tr>
+  //         </Table>
+  //         <ReviseButton>회원정보수정</ReviseButton>
+  //       </ContentTopDiv>
+  //       <ContentBottomDiv>
+  //         <MainHeadText>회원목록 및 정보</MainHeadText>
+  //         <Table>
+  //           <Tr>
+  //             <Td gray>등록일자</Td>
+  //             <Td gray>지점명</Td>
+  //             <Td gray>대표자</Td>
+  //             <Td gray>아이디</Td>
+  //             <Td gray>사업자번호</Td>
+  //             <Td gray last>
+  //               총 거래금액(원)
+  //             </Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td>2018-01-25</Td>
+  //             <Td>분당점</Td>
+  //             <Td>최창길</Td>
+  //             <Td>imhome</Td>
+  //             <Td>426-50-00326</Td>
+  //             <Td last>10,000,500</Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td>2018-01-25</Td>
+  //             <Td>분당점</Td>
+  //             <Td>최창길</Td>
+  //             <Td>imhome</Td>
+  //             <Td>426-50-00326</Td>
+  //             <Td last>5,000,500</Td>
+  //           </Tr>
+  //           <Tr>
+  //             <Td>2018-01-25</Td>
+  //             <Td>백현점</Td>
+  //             <Td>최창길</Td>
+  //             <Td>imhome</Td>
+  //             <Td>426-50-00326</Td>
+  //             <Td last>800,500</Td>
+  //           </Tr>
+  //         </Table>
+  //         <DelButton>회원삭제</DelButton>
+  //       </ContentBottomDiv>
+  //     </Main>
+  //   </ContentDiv>
   // ];
+  // 회원삭제
+  return [
+    <MainDiv>
+      <TopDiv>
+        <CloseButton />
+      </TopDiv>
+      <div>
+        <MainText>회원목록에서 삭제 하시겠습니까?</MainText>
+      </div>
+      <MainButtonDiv>
+        <Button>취소하기</Button>
+        <Button>삭제하기</Button>
+      </MainButtonDiv>
+      <div>
+        <SubText>삭제가 되면 복구가 되지 않습니다.</SubText>
+      </div>
+    </MainDiv>
+  ];
   // return [<Header />, <Nav />]
 };
 
